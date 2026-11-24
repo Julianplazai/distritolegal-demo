@@ -5,12 +5,13 @@
   <meta name="robots" content="noindex, nofollow">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Despacho de Abogados Online | Distrito Legal</title>
-  <meta name="description" content="Abogados online. Envíanos tu caso y lo resolvemos, sin líos. Primera consulta gratis.">
-  <meta name="theme-color" content="#031731">
+  <meta name="description" content="Despacho de abogados online. Estudiamos su caso sin que tenga que desplazarse. Primera consulta gratuita.">
+  <meta name="theme-color" content="#FFFFFF">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/tema-coches.css"><!-- estilo de coches.distritolegal.es; quitar para volver al diseño anterior -->
   <script src="https://widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
 </head>
 <body>
@@ -19,10 +20,10 @@
   <header class="cabecera">
     <div class="contenedor">
       <a class="logo" href="index.html" aria-label="Distrito Legal, inicio">
-        <img src="img/logo-distrito-legal.webp" alt="" width="165" height="41">
+        <img src="img/logo-distrito-legal-oscuro.webp" alt="" width="165" height="41">
       </a>
       <button class="boton-menu" type="button" aria-expanded="false" aria-controls="nav">Menú</button>
-      <nav class="nav" id="nav" data-lenis-prevent aria-label="Principal">
+      <nav class="nav" id="nav" aria-label="Principal">
         <ul class="nav-lista">
           <li>
             <button class="nav-enlace" type="button" data-desplegable aria-expanded="false" aria-controls="submenu-areas">
@@ -42,52 +43,47 @@
           <li><a class="nav-enlace" href="contacto.html">Contacto</a></li>
         </ul>
         <div class="cabecera-acciones-movil">
-          <a class="boton boton-principal" href="contacto.html">Cuéntanos tu caso</a>
-          <a class="telefono" href="tel:+34931311499">Llámanos: 931 31 14 99</a>
+          <a class="boton boton-principal" href="contacto.html">Solicitar consulta gratuita</a>
+          <a class="telefono" href="tel:+34931311499">Llámenos: 931 31 14 99</a>
         </div>
       </nav>
       <div class="cabecera-acciones">
         <a class="telefono" href="tel:+34931311499">931 31 14 99</a>
-        <a class="boton boton-principal" href="contacto.html">Cuéntanos tu caso</a>
+        <a class="boton boton-principal" href="contacto.html">Consulta gratuita</a>
       </div>
     </div>
-    <span class="progreso" aria-hidden="true"></span>
   </header>
 
   <main id="contenido">
-    <section class="hero oscuro" aria-labelledby="titulo-inicio">
-      <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+    <section class="hero" aria-labelledby="titulo-inicio">
       <div class="contenedor">
         <div class="hero-texto">
           <h1 class="hero-titulo" id="titulo-inicio">
-            <span class="linea" data-dividir>Abogados online</span>
-            <span class="para">para reclamar
-              <span class="rotador" aria-hidden="true"><span class="palabra texto-degradado">tu tarjeta revolving</span></span>
-              <span class="visualmente-oculto">lo que es tuyo</span>
-            </span>
+            <span class="linea">Despacho de abogados online</span>
+            <span class="para">para reclamar <span class="texto-degradado">lo que le corresponde</span></span>
           </h1>
-          <p class="entrada">Envíanos tu caso y lo resolvemos, sin líos. <strong>La primera consulta es gratis</strong> y te llamamos en menos de 48 h.</p>
+          <p class="entrada">Estudiamos su caso sin que tenga que desplazarse. <strong>La primera consulta es gratuita</strong> y le llamamos en menos de 48 horas.</p>
 
           <!-- Buscador de casos: lo primero que se usa (en la web original también estaba en la entrada) -->
           <form class="buscador" role="search" action="#busca-tu-caso" data-buscador>
-            <label class="buscador-etiqueta" for="buscar-caso">¿Qué te ha pasado? Busca tu caso</label>
+            <label class="buscador-etiqueta" for="buscar-caso">Describa su problema</label>
             <div class="buscador-campo">
               <svg class="buscador-lupa" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M15.5 15.5L20.5 20.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
-              <input id="buscar-caso" name="q" type="search" autocomplete="off" enterkeyhint="search" aria-describedby="buscar-estado" placeholder="Ej.: revolving, despido, vuelo…">
+              <input id="buscar-caso" name="q" type="search" autocomplete="off" enterkeyhint="search" aria-describedby="buscar-estado" placeholder="Ej.: despido, hipoteca, vuelo">
             </div>
             <ul class="buscador-resultados" id="buscar-resultados" aria-label="Casos que coinciden" hidden></ul>
-            <p class="buscador-estado" id="buscar-estado" role="status">O mira <a href="#busca-tu-caso">todas las áreas</a>.</p>
+            <p class="buscador-estado" id="buscar-estado" role="status">O consulte <a href="#busca-tu-caso">todas las áreas</a>.</p>
           </form>
 
           <div class="hero-acciones">
-            <a class="boton boton-principal" href="contacto.html">Cuéntanos tu caso</a>
-            <a class="telefono" href="tel:+34931311499">o llama al 931 31 14 99</a>
+            <a class="boton boton-principal" href="contacto.html">Solicitar consulta gratuita</a>
+            <a class="telefono" href="tel:+34931311499">o llame al 931 31 14 99</a>
           </div>
           <div class="hero-pie">
             <span class="horario">Lunes a viernes, de 12:00 a 20:00 h</span>
           </div>
           <div class="trustpilot-hueco" style="margin-top:16px">
-            <div class="trustpilot-widget" data-locale="es-ES" data-template-id="5419b732fbfb950b10de65e5" data-businessunit-id="6508503c4fa617ff90a04047" data-style-height="24px" data-style-width="100%" data-theme="dark">
+            <div class="trustpilot-widget" data-locale="es-ES" data-template-id="5419b732fbfb950b10de65e5" data-businessunit-id="6508503c4fa617ff90a04047" data-style-height="24px" data-style-width="100%" data-theme="light">
               <a href="https://es.trustpilot.com/review/distritolegal.es">Opiniones de clientes en Trustpilot</a>
             </div>
           </div>
@@ -103,261 +99,236 @@
       </div>
     </section>
 
-    <!-- Hojas sobre la mesa azul: las secciones claras son paneles con el azul alrededor, no bandas alternas.
-         «Busca tu caso» va primero: es lo que más se usa (CRO: el camino más corto a la conversión más común) -->
+    <!-- Orden de la portada (audit-003, n.º 6): ¿llevan mi caso? (áreas), ¿son de fiar? (opiniones, abogados,
+         medios, misión y cifras), ¿cómo funciona? (proceso y preguntas) y contacto -->
     <div class="hoja">
     <section class="areas" id="busca-tu-caso" aria-labelledby="titulo-areas">
       <div class="contenedor">
         <div class="areas-cabeza">
-          <h2 class="seccion-titulo" id="titulo-areas" data-dividir>Busca tu caso</h2>
-          <p class="intro">Elige el área y después tu caso. Hay 40 temas en total.</p>
+          <h2 class="seccion-titulo" id="titulo-areas">Áreas de práctica</h2>
+          <p class="intro">Seleccione el área y, a continuación, su caso. 40 asuntos en total.</p>
         </div>
 
-        <!-- Explorador: primero el área, después sus casos (como AirHelp y Legálitas). Cada caso sale una sola vez.
+        <!-- Explorador (24-nov): áreas según lo que le ha pasado a quien busca; cada caso en una sola área y cada
+             calculadora en la suya. Generado por herramientas/explorador.py: no editar a mano.
              Sin JS se ven todas las áreas seguidas; con JS, una cada vez -->
         <div class="explorador" data-explorador>
           <div class="explorador-areas" role="tablist" aria-label="Áreas del despacho">
-            <button class="area-boton" type="button" role="tab" id="tab-bancario" aria-controls="area-bancario" aria-selected="true">
+            <button class="area-boton" type="button" role="tab" id="tab-bancos" aria-controls="area-bancos" aria-selected="true">
               <svg class="area-icono" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10h18M5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 20.5h18M12 3l9 5H3z"/></svg>
-              <span class="area-nombre">Bancario</span>
-              <span class="area-cuenta">9 temas</span>
-            </button>
-            <button class="area-boton" type="button" role="tab" id="tab-reclamaciones" aria-controls="area-reclamaciones" aria-selected="false" tabindex="-1">
-              <svg class="area-icono" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10v4h3l7 4V6l-7 4H3zM16 9.2a3.4 3.4 0 0 1 0 5.6M18.6 6.6a7 7 0 0 1 0 10.8"/></svg>
-              <span class="area-nombre">Reclamaciones</span>
+              <span class="area-nombre">Derecho bancario</span>
               <span class="area-cuenta">6 temas</span>
             </button>
-            <button class="area-boton" type="button" role="tab" id="tab-laboral" aria-controls="area-laboral" aria-selected="false" tabindex="-1">
+            <button class="area-boton" type="button" role="tab" id="tab-deudas" aria-controls="area-deudas" aria-selected="false" tabindex="-1">
+              <svg class="area-icono" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></svg>
+              <span class="area-nombre">Segunda Oportunidad y deudas</span>
+              <span class="area-cuenta">3 temas</span>
+            </button>
+            <button class="area-boton" type="button" role="tab" id="tab-trabajo" aria-controls="area-trabajo" aria-selected="false" tabindex="-1">
               <svg class="area-icono" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5.5A1.5 1.5 0 0 1 10.5 4h3A1.5 1.5 0 0 1 15 5.5V7M3 13h18"/></svg>
-              <span class="area-nombre">Laboral</span>
-              <span class="area-cuenta">9 temas</span>
+              <span class="area-nombre">Derecho laboral</span>
+              <span class="area-cuenta">5 temas</span>
+            </button>
+            <button class="area-boton" type="button" role="tab" id="tab-incapacidad" aria-controls="area-incapacidad" aria-selected="false" tabindex="-1">
+              <svg class="area-icono" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7z"/><path d="M3.2 12h6.3l.5-1 2 4.5 2-7 1.5 3.5h5.3"/></svg>
+              <span class="area-nombre">Incapacidades y pensiones</span>
+              <span class="area-cuenta">4 temas</span>
+            </button>
+            <button class="area-boton" type="button" role="tab" id="tab-accidentes" aria-controls="area-accidentes" aria-selected="false" tabindex="-1">
+              <svg class="area-icono" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10v4h3l7 4V6l-7 4H3zM16 9.2a3.4 3.4 0 0 1 0 5.6M18.6 6.6a7 7 0 0 1 0 10.8"/></svg>
+              <span class="area-nombre">Accidentes y consumo</span>
+              <span class="area-cuenta">5 temas</span>
             </button>
             <button class="area-boton" type="button" role="tab" id="tab-civil" aria-controls="area-civil" aria-selected="false" tabindex="-1">
               <svg class="area-icono" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7M5.5 9.5V20h13V9.5"/><path d="M12 17.2s-3-1.8-3-3.7a1.6 1.6 0 0 1 3-.8 1.6 1.6 0 0 1 3 .8c0 1.9-3 3.7-3 3.7z"/></svg>
-              <span class="area-nombre">Civil y familia</span>
-              <span class="area-cuenta">7 temas</span>
+              <span class="area-nombre">Derecho civil y de familia</span>
+              <span class="area-cuenta">6 temas</span>
             </button>
             <button class="area-boton" type="button" role="tab" id="tab-penal" aria-controls="area-penal" aria-selected="false" tabindex="-1">
               <svg class="area-icono" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 3.5l6 6-3 3-6-6zM12.8 10.2L4 19l1.5 1.5 8.8-8.8M3 21h9"/></svg>
-              <span class="area-nombre">Penal</span>
-              <span class="area-cuenta">4 temas</span>
-            </button>
-            <button class="area-boton" type="button" role="tab" id="tab-administrativo" aria-controls="area-administrativo" aria-selected="false" tabindex="-1">
-              <svg class="area-icono" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l4 4v14H6zM15 3v4h4M9 12h7M9 16h7"/></svg>
-              <span class="area-nombre">Administrativo y fiscal</span>
+              <span class="area-nombre">Derecho penal</span>
               <span class="area-cuenta">5 temas</span>
+            </button>
+            <button class="area-boton" type="button" role="tab" id="tab-administracion" aria-controls="area-administracion" aria-selected="false" tabindex="-1">
+              <svg class="area-icono" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l4 4v14H6zM15 3v4h4M9 12h7M9 16h7"/></svg>
+              <span class="area-nombre">Derecho administrativo y fiscal</span>
+              <span class="area-cuenta">6 temas</span>
             </button>
           </div>
 
-          <div class="explorador-panel" id="area-bancario" role="tabpanel" aria-labelledby="tab-bancario" data-area="Bancario">
+          <div class="explorador-panel" id="area-bancos" role="tabpanel" aria-labelledby="tab-bancos" data-area="Derecho bancario">
             <div class="panel-cabeza">
-              <h3>Bancario <span class="area-cuenta">9 temas</span></h3>
-              <a class="boton boton-principal" href="derecho-bancario.html">Ver todo Bancario</a>
+              <h3>Derecho bancario <span class="area-cuenta">6 temas</span></h3>
+              <a class="area-enlace" href="derecho-bancario.html">Ver la página de Derecho Bancario <svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a>
             </div>
-            <ul class="casos-rejilla">
-              <li><a class="caso" href="https://distritolegal.es/tarjetas-revolving/" data-caso><img src="img/casos/c-tarjetas-revolving.webp" alt="" width="600" height="400" loading="lazy"><span class="caso-pie"><span class="caso-titulo">Tarjetas revolving</span><span class="caso-flecha"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></span></span></a></li>
-              <li><a class="caso" href="https://distritolegal.es/segundaoportunidad/" data-caso><img src="img/casos/c-segundaoportunidad.webp" alt="" width="600" height="400" loading="lazy"><span class="caso-pie"><span class="caso-titulo">Ley de la Segunda Oportunidad</span><span class="caso-flecha"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></span></span></a></li>
-              <li><a class="caso" href="https://distritolegal.es/clausulas-abusivas-en-hipoteca/" data-caso><img src="img/casos/c-clausulas-abusivas-en-hipoteca.webp" alt="" width="600" height="400" loading="lazy"><span class="caso-pie"><span class="caso-titulo">Cláusulas abusivas en la hipoteca</span><span class="caso-flecha"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></span></span></a></li>
-              <li><a class="caso" href="https://distritolegal.es/clausula-suelo/" data-caso><img src="img/casos/c-clausula-suelo.webp" alt="" width="600" height="400" loading="lazy"><span class="caso-pie"><span class="caso-titulo">Cláusula suelo</span><span class="caso-flecha"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></span></span></a></li>
-              <li><a class="caso" href="https://distritolegal.es/gastos-hipotecarios/" data-caso><img src="img/casos/c-gastos-hipotecarios.webp" alt="" width="600" height="400" loading="lazy"><span class="caso-pie"><span class="caso-titulo">Gastos hipotecarios</span><span class="caso-flecha"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></span></span></a></li>
-              <li><a class="caso" href="https://distritolegal.es/ficheros-morosidad/" data-caso><img src="img/casos/c-ficheros-morosidad.webp" alt="" width="600" height="400" loading="lazy"><span class="caso-pie"><span class="caso-titulo">Ficheros de morosidad (ASNEF)</span><span class="caso-flecha"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></span></span></a></li>
-            </ul>
             <ul class="casos-filas">
+              <li><a class="caso-fila" href="https://distritolegal.es/tarjetas-revolving/" data-caso><span class="caso-titulo">Tarjetas revolving</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
+              <li><a class="caso-fila" href="https://distritolegal.es/clausulas-abusivas-en-hipoteca/" data-caso><span class="caso-titulo">Cláusulas abusivas en la hipoteca</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
+              <li><a class="caso-fila" href="https://distritolegal.es/clausula-suelo/" data-caso><span class="caso-titulo">Cláusula suelo</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
+              <li><a class="caso-fila" href="https://distritolegal.es/gastos-hipotecarios/" data-caso><span class="caso-titulo">Gastos hipotecarios</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
               <li><a class="caso-fila" href="https://distritolegal.es/seguros-de-vida-vinculados-a-hipotecas/" data-caso><span class="caso-titulo">Seguros de vida vinculados a la hipoteca</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
-              <li><a class="caso-fila" href="https://distritolegal.es/codigo-de-buenas-practicas/" data-caso><span class="caso-titulo">Código de Buenas Prácticas</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
               <li><a class="caso-fila" href="https://distritolegal.es/reclamacion-financiacion-coches/" data-caso><span class="caso-titulo">Financiación de coches</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
             </ul>
-          </div>
-          <div class="explorador-panel" id="area-reclamaciones" role="tabpanel" aria-labelledby="tab-reclamaciones" data-area="Reclamaciones">
-            <div class="panel-cabeza">
-              <h3>Reclamaciones <span class="area-cuenta">6 temas</span></h3>
-              <a class="area-enlace" href="https://distritolegal.es/reclamaciones/">Ver toda el área<span class="visualmente-oculto"> de Reclamaciones</span> <svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a>
-            </div>
-            <ul class="casos-rejilla">
-              <li><a class="caso" href="https://distritolegal.es/accidentes-trafico/" data-caso><img src="img/casos/c-accidentes-trafico.webp" alt="" width="600" height="400" loading="lazy"><span class="caso-pie"><span class="caso-titulo">Accidentes de tráfico</span><span class="caso-flecha"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></span></span></a></li>
-              <li><a class="caso" href="https://distritolegal.es/reclamacion-vuelos/" data-caso><img src="img/casos/c-reclamacion-vuelos.webp" alt="" width="600" height="400" loading="lazy"><span class="caso-pie"><span class="caso-titulo">Vuelos retrasados o cancelados</span><span class="caso-flecha"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></span></span></a></li>
-              <li><a class="caso" href="https://distritolegal.es/negligencia-cirugia-estetica/" data-caso><img src="img/casos/c-negligencia-cirugia-estetica.webp" alt="" width="600" height="400" loading="lazy"><span class="caso-pie"><span class="caso-titulo">Negligencia en cirugía estética</span><span class="caso-flecha"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></span></span></a></li>
-              <li><a class="caso" href="https://distritolegal.es/reclamacion-clinicas-medico-esteticas/" data-caso><img src="img/casos/c-reclamacion-clinicas-medico-esteticas.webp" alt="" width="600" height="400" loading="lazy"><span class="caso-pie"><span class="caso-titulo">Clínicas médico-estéticas</span><span class="caso-flecha"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></span></span></a></li>
-              <li><a class="caso" href="https://distritolegal.es/ciberestafas/" data-caso><img src="img/casos/c-ciberestafas.webp" alt="" width="600" height="400" loading="lazy"><span class="caso-pie"><span class="caso-titulo">Ciberestafas</span><span class="caso-flecha"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></span></span></a></li>
-            </ul>
-            <ul class="casos-filas">
-              <li><a class="caso-fila" href="https://distritolegal.es/cancelacion-eventos/" data-caso><span class="caso-titulo">Cancelación de eventos</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
+            <ul class="casos-calculadoras" aria-label="Calculadoras gratuitas de Derecho bancario">
+              <li><a class="caso-fila caso-calculadora" href="https://distritolegal.es/calculadora-clausulas-abusivas-en-hipoteca/"><span><span class="calculadora-tipo">Calculadora gratuita</span> <span class="caso-titulo">Cláusulas abusivas en la hipoteca</span></span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
             </ul>
           </div>
-          <div class="explorador-panel" id="area-laboral" role="tabpanel" aria-labelledby="tab-laboral" data-area="Laboral">
+          <div class="explorador-panel" id="area-deudas" role="tabpanel" aria-labelledby="tab-deudas" data-area="Segunda Oportunidad y deudas">
             <div class="panel-cabeza">
-              <h3>Laboral <span class="area-cuenta">9 temas</span></h3>
-              <a class="area-enlace" href="https://distritolegal.es/derecho-laboral/">Ver toda el área<span class="visualmente-oculto"> de Laboral</span> <svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a>
+              <h3>Segunda Oportunidad y deudas <span class="area-cuenta">3 temas</span></h3>
             </div>
-            <ul class="casos-rejilla">
-              <li><a class="caso" href="https://distritolegal.es/despidos/" data-caso><img src="img/casos/c-despidos.webp" alt="" width="600" height="400" loading="lazy"><span class="caso-pie"><span class="caso-titulo">Despidos</span><span class="caso-flecha"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></span></span></a></li>
-              <li><a class="caso" href="https://distritolegal.es/accidentes-laborales/" data-caso><img src="img/casos/c-accidentes-laborales.webp" alt="" width="600" height="400" loading="lazy"><span class="caso-pie"><span class="caso-titulo">Accidentes laborales</span><span class="caso-flecha"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></span></span></a></li>
-              <li><a class="caso" href="https://distritolegal.es/incapacidad-permanente/" data-caso><img src="img/casos/c-incapacidad-permanente.webp" alt="" width="600" height="400" loading="lazy"><span class="caso-pie"><span class="caso-titulo">Incapacidad permanente</span><span class="caso-flecha"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></span></span></a></li>
-              <li><a class="caso" href="https://distritolegal.es/nominas-contratos-laborales/" data-caso><img src="img/casos/c-nominas-contratos-laborales.webp" alt="" width="600" height="400" loading="lazy"><span class="caso-pie"><span class="caso-titulo">Nóminas y contratos</span><span class="caso-flecha"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></span></span></a></li>
-              <li><a class="caso" href="https://distritolegal.es/liquidaciones-finiquitos/" data-caso><img src="img/casos/c-liquidaciones-finiquitos.webp" alt="" width="600" height="400" loading="lazy"><span class="caso-pie"><span class="caso-titulo">Liquidaciones y finiquitos</span><span class="caso-flecha"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></span></span></a></li>
-              <li><a class="caso" href="https://distritolegal.es/pensiones-jubilaciones/" data-caso><img src="img/casos/c-pensiones-jubilaciones.webp" alt="" width="600" height="400" loading="lazy"><span class="caso-pie"><span class="caso-titulo">Pensiones y jubilaciones</span><span class="caso-flecha"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></span></span></a></li>
-              <li><a class="caso" href="https://distritolegal.es/complemento-brecha-genero/" data-caso><img src="img/casos/c-complemento-brecha-genero.webp" alt="" width="600" height="400" loading="lazy"><span class="caso-pie"><span class="caso-titulo">Complemento por brecha de género</span><span class="caso-flecha"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></span></span></a></li>
-            </ul>
             <ul class="casos-filas">
-              <li><a class="caso-fila" href="https://distritolegal.es/bajas-laborales/" data-caso><span class="caso-titulo">Bajas laborales</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
+              <li><a class="caso-fila" href="https://distritolegal.es/segundaoportunidad/" data-caso><span class="caso-titulo">Ley de la Segunda Oportunidad</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
+              <li><a class="caso-fila" href="https://distritolegal.es/ficheros-morosidad/" data-caso><span class="caso-titulo">Ficheros de morosidad (ASNEF)</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
+              <li><a class="caso-fila" href="https://distritolegal.es/codigo-de-buenas-practicas/" data-caso><span class="caso-titulo">Código de Buenas Prácticas</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
+            </ul>
+          </div>
+          <div class="explorador-panel" id="area-trabajo" role="tabpanel" aria-labelledby="tab-trabajo" data-area="Derecho laboral">
+            <div class="panel-cabeza">
+              <h3>Derecho laboral <span class="area-cuenta">5 temas</span></h3>
+              <a class="area-enlace" href="https://distritolegal.es/derecho-laboral/">Ver la página de Derecho Laboral <svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a>
+            </div>
+            <ul class="casos-filas">
+              <li><a class="caso-fila" href="https://distritolegal.es/despidos/" data-caso><span class="caso-titulo">Despidos</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
+              <li><a class="caso-fila" href="https://distritolegal.es/nominas-contratos-laborales/" data-caso><span class="caso-titulo">Nóminas y contratos</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
+              <li><a class="caso-fila" href="https://distritolegal.es/liquidaciones-finiquitos/" data-caso><span class="caso-titulo">Liquidaciones y finiquitos</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
+              <li><a class="caso-fila" href="https://distritolegal.es/accidentes-laborales/" data-caso><span class="caso-titulo">Accidentes laborales</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
               <li><a class="caso-fila" href="https://distritolegal.es/interinos/" data-caso><span class="caso-titulo">Interinos</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
             </ul>
-          </div>
-          <div class="explorador-panel" id="area-civil" role="tabpanel" aria-labelledby="tab-civil" data-area="Civil y familia">
-            <div class="panel-cabeza">
-              <h3>Civil y familia <span class="area-cuenta">7 temas</span></h3>
-              <a class="area-enlace" href="https://distritolegal.es/derecho-civil/">Ver toda el área<span class="visualmente-oculto"> de Civil y familia</span> <svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a>
-            </div>
-            <ul class="casos-rejilla">
-              <li><a class="caso" href="https://distritolegal.es/divorcios-separaciones-matrimoniales/" data-caso><img src="img/casos/c-divorcios-separaciones-matrimoniales.webp" alt="" width="600" height="400" loading="lazy"><span class="caso-pie"><span class="caso-titulo">Divorcios y separaciones</span><span class="caso-flecha"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></span></span></a></li>
-              <li><a class="caso" href="https://distritolegal.es/custodia-hijos/" data-caso><img src="img/casos/c-custodia-hijos.webp" alt="" width="600" height="400" loading="lazy"><span class="caso-pie"><span class="caso-titulo">Custodia de los hijos</span><span class="caso-flecha"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></span></span></a></li>
-              <li><a class="caso" href="https://distritolegal.es/herencias/" data-caso><img src="img/casos/c-herencias.webp" alt="" width="600" height="400" loading="lazy"><span class="caso-pie"><span class="caso-titulo">Herencias</span><span class="caso-flecha"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></span></span></a></li>
-              <li><a class="caso" href="https://distritolegal.es/vicios-ocultos/" data-caso><img src="img/casos/c-vicios-ocultos.webp" alt="" width="600" height="400" loading="lazy"><span class="caso-pie"><span class="caso-titulo">Vicios ocultos</span><span class="caso-flecha"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></span></span></a></li>
-              <li><a class="caso" href="https://distritolegal.es/extranjeria/" data-caso><img src="img/casos/c-extranjeria.webp" alt="" width="600" height="400" loading="lazy"><span class="caso-pie"><span class="caso-titulo">Extranjería</span><span class="caso-flecha"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></span></span></a></li>
+            <ul class="casos-calculadoras" aria-label="Calculadoras gratuitas de Derecho laboral">
+              <li><a class="caso-fila caso-calculadora" href="https://distritolegal.es/calculadora-indemnizacion-accidente-trabajo/"><span><span class="calculadora-tipo">Calculadora gratuita</span> <span class="caso-titulo">Accidente de trabajo</span></span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
             </ul>
+          </div>
+          <div class="explorador-panel" id="area-incapacidad" role="tabpanel" aria-labelledby="tab-incapacidad" data-area="Incapacidades y pensiones">
+            <div class="panel-cabeza">
+              <h3>Incapacidades y pensiones <span class="area-cuenta">4 temas</span></h3>
+            </div>
             <ul class="casos-filas">
+              <li><a class="caso-fila" href="https://distritolegal.es/incapacidad-permanente/" data-caso><span class="caso-titulo">Incapacidad permanente</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
+              <li><a class="caso-fila" href="https://distritolegal.es/bajas-laborales/" data-caso><span class="caso-titulo">Bajas laborales</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
+              <li><a class="caso-fila" href="https://distritolegal.es/pensiones-jubilaciones/" data-caso><span class="caso-titulo">Pensiones y jubilaciones</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
+              <li><a class="caso-fila" href="https://distritolegal.es/complemento-brecha-genero/" data-caso><span class="caso-titulo">Complemento por brecha de género</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
+            </ul>
+            <ul class="casos-calculadoras" aria-label="Calculadoras gratuitas de Incapacidades y pensiones">
+              <li><a class="caso-fila caso-calculadora" href="https://distritolegal.es/calculadora-incapacidad-permanente/"><span><span class="calculadora-tipo">Calculadora gratuita</span> <span class="caso-titulo">Incapacidad permanente</span></span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
+            </ul>
+          </div>
+          <div class="explorador-panel" id="area-accidentes" role="tabpanel" aria-labelledby="tab-accidentes" data-area="Accidentes y consumo">
+            <div class="panel-cabeza">
+              <h3>Accidentes y consumo <span class="area-cuenta">5 temas</span></h3>
+              <a class="area-enlace" href="https://distritolegal.es/reclamaciones/">Ver la página de Reclamaciones <svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a>
+            </div>
+            <ul class="casos-filas">
+              <li><a class="caso-fila" href="https://distritolegal.es/accidentes-trafico/" data-caso><span class="caso-titulo">Accidentes de tráfico</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
+              <li><a class="caso-fila" href="https://distritolegal.es/negligencia-cirugia-estetica/" data-caso><span class="caso-titulo">Negligencia en cirugía estética</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
+              <li><a class="caso-fila" href="https://distritolegal.es/reclamacion-clinicas-medico-esteticas/" data-caso><span class="caso-titulo">Clínicas médico-estéticas</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
+              <li><a class="caso-fila" href="https://distritolegal.es/reclamacion-vuelos/" data-caso><span class="caso-titulo">Vuelos retrasados o cancelados</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
+              <li><a class="caso-fila" href="https://distritolegal.es/cancelacion-eventos/" data-caso><span class="caso-titulo">Cancelación de eventos</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
+            </ul>
+            <ul class="casos-calculadoras" aria-label="Calculadoras gratuitas de Accidentes y consumo">
+              <li><a class="caso-fila caso-calculadora" href="https://distritolegal.es/calculadora-accidente-trafico/"><span><span class="calculadora-tipo">Calculadora gratuita</span> <span class="caso-titulo">Accidente de tráfico</span></span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
+              <li><a class="caso-fila caso-calculadora" href="https://distritolegal.es/calculo-indemnizacion-danos-esteticos/"><span><span class="calculadora-tipo">Calculadora gratuita</span> <span class="caso-titulo">Daños estéticos</span></span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
+            </ul>
+          </div>
+          <div class="explorador-panel" id="area-civil" role="tabpanel" aria-labelledby="tab-civil" data-area="Derecho civil y de familia">
+            <div class="panel-cabeza">
+              <h3>Derecho civil y de familia <span class="area-cuenta">6 temas</span></h3>
+              <a class="area-enlace" href="https://distritolegal.es/derecho-civil/">Ver la página de Derecho Civil <svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a>
+            </div>
+            <ul class="casos-filas">
+              <li><a class="caso-fila" href="https://distritolegal.es/divorcios-separaciones-matrimoniales/" data-caso><span class="caso-titulo">Divorcios y separaciones</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
+              <li><a class="caso-fila" href="https://distritolegal.es/custodia-hijos/" data-caso><span class="caso-titulo">Custodia de los hijos</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
+              <li><a class="caso-fila" href="https://distritolegal.es/herencias/" data-caso><span class="caso-titulo">Herencias</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
+              <li><a class="caso-fila" href="https://distritolegal.es/vicios-ocultos/" data-caso><span class="caso-titulo">Vicios ocultos</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
               <li><a class="caso-fila" href="https://distritolegal.es/derecho-al-honor/" data-caso><span class="caso-titulo">Derecho al honor</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
               <li><a class="caso-fila" href="https://distritolegal.es/derechos-de-imagen/" data-caso><span class="caso-titulo">Derechos de imagen</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
             </ul>
           </div>
-          <div class="explorador-panel" id="area-penal" role="tabpanel" aria-labelledby="tab-penal" data-area="Penal">
+          <div class="explorador-panel" id="area-penal" role="tabpanel" aria-labelledby="tab-penal" data-area="Derecho penal">
             <div class="panel-cabeza">
-              <h3>Penal <span class="area-cuenta">4 temas</span></h3>
-              <a class="area-enlace" href="https://distritolegal.es/derecho-penal/">Ver toda el área<span class="visualmente-oculto"> de Penal</span> <svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a>
+              <h3>Derecho penal <span class="area-cuenta">5 temas</span></h3>
+              <a class="area-enlace" href="https://distritolegal.es/derecho-penal/">Ver la página de Derecho Penal <svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a>
             </div>
-            <ul class="casos-rejilla">
-              <li><a class="caso" href="https://distritolegal.es/delito-lesiones/" data-caso><img src="img/casos/c-delito-lesiones.webp" alt="" width="600" height="400" loading="lazy"><span class="caso-pie"><span class="caso-titulo">Lesiones</span><span class="caso-flecha"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></span></span></a></li>
-              <li><a class="caso" href="https://distritolegal.es/robos/" data-caso><img src="img/casos/c-robos.webp" alt="" width="600" height="400" loading="lazy"><span class="caso-pie"><span class="caso-titulo">Robos</span><span class="caso-flecha"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></span></span></a></li>
-              <li><a class="caso" href="https://distritolegal.es/condenas/" data-caso><img src="img/casos/c-condenas.webp" alt="" width="600" height="400" loading="lazy"><span class="caso-pie"><span class="caso-titulo">Condenas</span><span class="caso-flecha"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></span></span></a></li>
-            </ul>
             <ul class="casos-filas">
+              <li><a class="caso-fila" href="https://distritolegal.es/delito-lesiones/" data-caso><span class="caso-titulo">Lesiones</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
+              <li><a class="caso-fila" href="https://distritolegal.es/robos/" data-caso><span class="caso-titulo">Robos</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
               <li><a class="caso-fila" href="https://distritolegal.es/amenazas/" data-caso><span class="caso-titulo">Amenazas</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
+              <li><a class="caso-fila" href="https://distritolegal.es/ciberestafas/" data-caso><span class="caso-titulo">Ciberestafas</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
+              <li><a class="caso-fila" href="https://distritolegal.es/condenas/" data-caso><span class="caso-titulo">Condenas</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
+            </ul>
+            <ul class="casos-calculadoras" aria-label="Calculadoras gratuitas de Derecho penal">
+              <li><a class="caso-fila caso-calculadora" href="https://distritolegal.es/calculadora-indemnizacion-por-lesiones/"><span><span class="calculadora-tipo">Calculadora gratuita</span> <span class="caso-titulo">Lesiones</span></span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
             </ul>
           </div>
-          <div class="explorador-panel" id="area-administrativo" role="tabpanel" aria-labelledby="tab-administrativo" data-area="Administrativo y fiscal">
+          <div class="explorador-panel" id="area-administracion" role="tabpanel" aria-labelledby="tab-administracion" data-area="Derecho administrativo y fiscal">
             <div class="panel-cabeza">
-              <h3>Administrativo y fiscal <span class="area-cuenta">5 temas</span></h3>
-              <a class="area-enlace" href="https://distritolegal.es/derecho-administrativo/">Ver toda el área<span class="visualmente-oculto"> de Administrativo y fiscal</span> <svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a>
+              <h3>Derecho administrativo y fiscal <span class="area-cuenta">6 temas</span></h3>
+              <a class="area-enlace" href="https://distritolegal.es/derecho-administrativo/">Ver la página de Derecho Administrativo <svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a>
             </div>
-            <ul class="casos-rejilla">
-              <li><a class="caso" href="https://distritolegal.es/tramites-administrativos/" data-caso><img src="img/casos/c-tramites-administrativos.webp" alt="" width="600" height="400" loading="lazy"><span class="caso-pie"><span class="caso-titulo">Trámites administrativos</span><span class="caso-flecha"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></span></span></a></li>
-            </ul>
             <ul class="casos-filas">
               <li><a class="caso-fila" href="https://distritolegal.es/multas-trafico/" data-caso><span class="caso-titulo">Multas de tráfico</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
               <li><a class="caso-fila" href="https://distritolegal.es/plusvalia/" data-caso><span class="caso-titulo">Plusvalía municipal</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
-              <li><a class="caso-fila" href="https://distritolegal.es/subvenciones-y-ayudas/" data-caso><span class="caso-titulo">Subvenciones y ayudas</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
               <li><a class="caso-fila" href="https://distritolegal.es/fiscalidad/" data-caso><span class="caso-titulo">Fiscalidad</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
+              <li><a class="caso-fila" href="https://distritolegal.es/subvenciones-y-ayudas/" data-caso><span class="caso-titulo">Subvenciones y ayudas</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
+              <li><a class="caso-fila" href="https://distritolegal.es/extranjeria/" data-caso><span class="caso-titulo">Extranjería</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
+              <li><a class="caso-fila" href="https://distritolegal.es/tramites-administrativos/" data-caso><span class="caso-titulo">Trámites administrativos</span><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
             </ul>
           </div>
         </div>
 
-        <!-- Herramientas gratuitas de la web actual: para quien todavía se está informando (CRO) -->
-        <div class="calculadoras" aria-labelledby="titulo-calculadoras">
-          <div class="calculadoras-cabeza">
-            <h3 id="titulo-calculadoras">Calcula cuánto te corresponde</h3>
-            <p>Calculadoras gratuitas para hacerte una idea antes de hablar con nosotros.</p>
-            <p class="calculadoras-modelos">¿Prefieres reclamar por tu cuenta? <a href="https://distritolegal.es/modelos-reclamaciones-legales/">Modelos de reclamación</a></p>
-          </div>
-          <ul class="calculadoras-lista">
-            <li><a href="https://distritolegal.es/calculadora-accidente-trafico/"><span class="calculadora-tipo">Calculadora</span> Accidente de tráfico <svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
-            <li><a href="https://distritolegal.es/calculadora-indemnizacion-accidente-trabajo/"><span class="calculadora-tipo">Calculadora</span> Accidente de trabajo <svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
-            <li><a href="https://distritolegal.es/calculadora-indemnizacion-por-lesiones/"><span class="calculadora-tipo">Calculadora</span> Lesiones <svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
-            <li><a href="https://distritolegal.es/calculo-indemnizacion-danos-esteticos/"><span class="calculadora-tipo">Calculadora</span> Daños estéticos <svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
-            <li><a href="https://distritolegal.es/calculadora-incapacidad-permanente/"><span class="calculadora-tipo">Calculadora</span> Incapacidad permanente <svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
-            <li><a href="https://distritolegal.es/calculadora-clausulas-abusivas-en-hipoteca/"><span class="calculadora-tipo">Calculadora</span> Cláusulas abusivas en la hipoteca <svg viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11h13M12 5l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></a></li>
-          </ul>
-        </div>
-
-        <p class="areas-otras">¿No ves tu caso? <a href="contacto.html">Cuéntanoslo igualmente</a> y te decimos si podemos ayudarte.</p>
+        <p class="areas-otras">Si su caso no aparece, <a href="contacto.html">consúltenos igualmente</a> y le diremos si podemos ayudarle. Si prefiere reclamar por su cuenta, tiene a su disposición nuestros <a href="https://distritolegal.es/modelos-reclamaciones-legales/">modelos de reclamación</a>.</p>
       </div>
     </section>
     </div>
 
-    <div class="hoja hoja-gris">
-    <section class="mision" aria-labelledby="titulo-mision">
-      <div class="contenedor">
-        <h2 class="subtitulo" id="titulo-mision">Nuestra misión</h2>
-        <p class="frase-grande" data-leer>Buscamos que cualquiera acceda a la justicia de forma sencilla. Solo llevamos tu caso si nos necesitas y podemos ganarlo.</p>
-        <p class="apoyo">Lo dejas en nuestras manos y lo gestionamos sin que tengas que moverte de casa.</p>
 
-        <ul class="pildoras" aria-label="Distrito Legal en cifras">
-          <li class="pildora"><span class="pildora-numero" data-contar="7000" data-prefijo="+">+7.000</span><span class="pildora-texto">clientes han confiado en nosotros</span></li>
-          <li class="pildora"><span class="pildora-numero" data-contar="4.8" data-decimales="1" data-sufijo="/5">4,8/5</span><span class="pildora-texto">de valoración media</span></li>
-          <li class="pildora"><span class="pildora-numero" data-contar="758">758</span><span class="pildora-texto">casos ganados</span></li>
-          <li class="pildora pildora-grande"><span class="pildora-numero" data-contar="2700000" data-prefijo="+" data-sufijo=" €">+2.700.000 €</span><span class="pildora-texto">recuperados para nuestros clientes</span></li>
+    <div class="hoja hoja-gris">
+    <section class="opiniones" aria-labelledby="titulo-opiniones">
+      <div class="contenedor">
+        <div class="texto">
+          <h2 class="seccion-titulo" id="titulo-opiniones">Opiniones de nuestros clientes</h2>
+          <p>Valoraciones publicadas en Trustpilot, una plataforma independiente.</p>
+          <!-- Nota fija con fecha: el widget de Trustpilot solo se pinta en el dominio del despacho y aquí dejaba un recuadro vacío -->
+          <div class="nota-tp">
+            <p class="nota-tp-marca">Trustpilot</p>
+            <p class="nota-tp-cifra"><strong>4,6</strong> <span>de 5 · Excelente</span></p>
+            <p class="nota-tp-base">3.637 opiniones, a 24 de noviembre de 2026</p>
+          </div>
+          <p>Consulte todas las opiniones en <a href="opiniones.html">nuestra página de opiniones</a> o <a href="https://es.trustpilot.com/review/distritolegal.es">en Trustpilot</a>.</p>
+        </div>
+        <ul class="rejilla-opiniones">
+          <li><img src="img/opiniones/raquel.jpg" alt="Opinión de Raquel en Trustpilot, cinco estrellas" width="759" height="394" loading="lazy"></li>
+          <li><img src="img/opiniones/victor.jpg" alt="Opinión de Víctor en Trustpilot, cinco estrellas" width="768" height="307" loading="lazy"></li>
+          <li><img src="img/opiniones/sonia.jpg" alt="Opinión de Sonia en Trustpilot, cinco estrellas" width="768" height="314" loading="lazy"></li>
+          <li><img src="img/opiniones/armando.jpg" alt="Opinión de Armando en Trustpilot, cinco estrellas" width="768" height="334" loading="lazy"></li>
         </ul>
       </div>
     </section>
     </div>
 
-    <div class="hoja hoja-azul">
-    <section class="proceso-vivo oscuro" aria-labelledby="titulo-proceso">
-      <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
-      <div class="contenedor">
-        <h2 class="seccion-titulo" id="titulo-proceso" data-dividir>Así llevamos tu caso</h2>
-        <p class="subtitulo">Cuatro pasos, desde tu primera llamada.</p>
-        <div class="pasos-marco">
-          <ol class="pasos-linea">
-            <li class="paso"><span class="paso-tramo" aria-hidden="true"><i></i></span><span class="paso-nodo" aria-hidden="true"></span>
-              <div class="paso-tarjeta">
-                <span class="paso-icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
-                <p class="paso-etiqueta" aria-hidden="true">Paso 1</p>
-                <h3>Te llamamos</h3>
-                <p>Nos dejas tus datos y te contactamos. La primera consulta es gratis.</p>
-              </div>
-            </li>
-            <li class="paso"><span class="paso-tramo" aria-hidden="true"><i></i></span><span class="paso-nodo" aria-hidden="true"></span>
-              <div class="paso-tarjeta">
-                <span class="paso-icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></svg></span>
-                <p class="paso-etiqueta" aria-hidden="true">Paso 2</p>
-                <h3>Vemos si es viable</h3>
-                <p>Te hacemos las preguntas necesarias para saber si tu caso tiene posibilidades de éxito.</p>
-              </div>
-            </li>
-            <li class="paso"><span class="paso-tramo" aria-hidden="true"><i></i></span><span class="paso-nodo" aria-hidden="true"></span>
-              <div class="paso-tarjeta">
-                <span class="paso-icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></svg></span>
-                <p class="paso-etiqueta" aria-hidden="true">Paso 3</p>
-                <h3>Te explicamos cómo seguir</h3>
-                <p>Te asesoramos y te contamos qué pasos hay que dar.</p>
-              </div>
-            </li>
-            <li class="paso"><span class="paso-nodo" aria-hidden="true"></span>
-              <div class="paso-tarjeta">
-                <span class="paso-icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 8h8"/><path d="M8 12h5"/></svg></span>
-                <p class="paso-etiqueta" aria-hidden="true">Paso 4</p>
-                <h3>Te informamos en cada etapa</h3>
-                <p>Por videollamada y teléfono, y si lo prefieres, en nuestras oficinas.</p>
-              </div>
-            </li>
-          </ol>
-        </div>
-      </div>
-    </section>
-    </div>
 
-    <div class="hoja hoja-gris">
+    <div class="hoja">
     <section class="abogados" aria-labelledby="titulo-abogados">
       <div class="contenedor">
-        <h2 class="seccion-titulo" id="titulo-abogados" data-dividir>Quién lleva tu caso</h2>
-        <p class="subtitulo">Seguramente ya los has visto explicando tus derechos en redes.</p>
+        <h2 class="seccion-titulo" id="titulo-abogados">Nuestros abogados</h2>
+        <p class="subtitulo">Abogados colegiados y divulgadores jurídicos, con más de 5 millones de seguidores en redes.</p>
         <div class="abogados-lista">
           <article class="abogado">
-            <div class="abogado-foto"><img src="img/xavi-abat.webp" alt="Xavi Abat" width="674" height="964" loading="lazy" data-paralaje></div>
+            <div class="abogado-foto"><img src="img/xavi-abat.webp" alt="Xavi Abat" width="674" height="964" loading="lazy"></div>
             <div>
               <h3>Xavi Abat</h3>
               <p class="cargo">Abogado y divulgador jurídico</p>
               <p class="bio">Abogado experto en contenido jurídico desde 1999 y profesor de derecho. Dirige el equipo de reclamaciones de Distrito Legal y ha trabajado en tribunales de toda España.</p>
-              <p class="audiencia"><strong data-contar="1.5" data-decimales="1" data-prefijo="+" data-sufijo=" M">+1,5 M</strong><span>de seguidores en redes</span></p>
+              <p class="audiencia"><strong>+1,5 M</strong><span>de seguidores en redes</span></p>
             </div>
           </article>
           <article class="abogado">
-            <div class="abogado-foto"><img src="img/andres-millan.webp" alt="Andrés Millán" width="674" height="964" loading="lazy" data-paralaje></div>
+            <div class="abogado-foto"><img src="img/andres-millan.webp" alt="Andrés Millán" width="674" height="964" loading="lazy"></div>
             <div>
               <h3>Andrés Millán</h3>
               <p class="cargo">Abogado colegiado, Lawtips</p>
               <p class="bio">Habla de actualidad jurídica y finanzas para quien no es abogado.</p>
-              <p class="audiencia"><strong data-contar="3.5" data-decimales="1" data-prefijo="+" data-sufijo=" M">+3,5 M</strong><span>de seguidores en redes</span></p>
+              <p class="audiencia"><strong>+3,5 M</strong><span>de seguidores en redes</span></p>
             </div>
           </article>
         </div>
@@ -365,10 +336,11 @@
     </section>
     </div>
 
+
     <section class="prensa" aria-labelledby="titulo-prensa">
       <div class="contenedor prensa-cabeza">
-        <h2 class="seccion-titulo" id="titulo-prensa" data-dividir>¿Qué dicen los medios?</h2>
-        <p>Nuestros abogados comparten su experiencia en los medios. Estas son algunas de sus apariciones.</p>
+        <h2 class="seccion-titulo" id="titulo-prensa">Distrito Legal en los medios</h2>
+        <p>Apariciones de nuestros abogados en prensa, radio y televisión.</p>
       </div>
       <div class="moviles-ventana" tabindex="0" aria-label="Apariciones en prensa, desplazable">
         <ul class="moviles">
@@ -384,43 +356,84 @@
       </div>
     </section>
 
-    <div class="hoja hoja-claro">
-    <section class="opiniones" aria-labelledby="titulo-opiniones">
+
+    <div class="hoja">
+    <section class="mision" aria-labelledby="titulo-mision">
       <div class="contenedor">
-        <div class="texto">
-          <h2 class="seccion-titulo" id="titulo-opiniones" data-dividir>No te lo contamos nosotros</h2>
-          <p>Te lo cuentan nuestros clientes en Trustpilot, donde cualquiera puede dejar su opinión.</p>
-          <div class="trustpilot-mini">
-            <div class="trustpilot-widget" data-locale="es-ES" data-template-id="5613c9cde69ddc09340c6beb" data-businessunit-id="6508503c4fa617ff90a04047" data-style-height="90px" data-style-width="100%" data-theme="light">
-              <a href="https://es.trustpilot.com/review/distritolegal.es">Ver la valoración de Distrito Legal en Trustpilot</a>
-            </div>
-          </div>
-          <p><a href="opiniones.html">Ver las opiniones de Distrito Legal</a> o <a href="https://es.trustpilot.com/review/distritolegal.es">leerlas todas en Trustpilot</a></p>
-        </div>
-        <ul class="rejilla-opiniones">
-          <li><img src="img/opiniones/raquel.jpg" alt="Opinión de Raquel en Trustpilot, cinco estrellas" width="759" height="394" loading="lazy"></li>
-          <li><img src="img/opiniones/victor.jpg" alt="Opinión de Víctor en Trustpilot, cinco estrellas" width="768" height="307" loading="lazy"></li>
-          <li><img src="img/opiniones/sonia.jpg" alt="Opinión de Sonia en Trustpilot, cinco estrellas" width="768" height="314" loading="lazy"></li>
-          <li><img src="img/opiniones/armando.jpg" alt="Opinión de Armando en Trustpilot, cinco estrellas" width="768" height="334" loading="lazy"></li>
+        <h2 class="subtitulo" id="titulo-mision">Nuestra misión</h2>
+        <p class="frase-grande">Acercamos la justicia a cualquier persona. Solo aceptamos un caso cuando nos necesita y hay posibilidades reales de ganarlo.</p>
+        <p class="apoyo">Gestionamos todo el procedimiento sin que tenga que desplazarse.</p>
+
+        <ul class="pildoras" aria-label="Distrito Legal en cifras">
+          <li class="pildora"><span class="pildora-numero">+7.000</span><span class="pildora-texto">clientes han confiado en nosotros</span></li>
+          <!-- El «4,8/5» de la web actual no tiene fuente conocida (audit-003, n.º 2): se usa la nota de Trustpilot, con fecha en «Opiniones» -->
+          <li class="pildora"><span class="pildora-numero">4,6/5</span><span class="pildora-texto">en Trustpilot</span></li>
+          <li class="pildora"><span class="pildora-numero">758</span><span class="pildora-texto">casos ganados</span></li>
+          <li class="pildora pildora-grande"><span class="pildora-numero">+2.700.000 €</span><span class="pildora-texto">recuperados para nuestros clientes</span></li>
         </ul>
       </div>
     </section>
+    </div>
 
+
+    <div class="hoja hoja-azul">
+    <section class="proceso-vivo oscuro" aria-labelledby="titulo-proceso">
+      <div class="contenedor">
+        <h2 class="seccion-titulo" id="titulo-proceso">Cómo trabajamos</h2>
+        <p class="subtitulo">Cuatro fases desde la primera llamada.</p>
+        <div class="pasos-marco">
+          <ol class="pasos-linea">
+            <li class="paso"><span class="paso-tramo" aria-hidden="true"><i></i></span><span class="paso-nodo" aria-hidden="true"></span>
+              <div class="paso-tarjeta">
+                <span class="paso-icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+                <h3>Primera llamada</h3>
+                <p>Nos deja sus datos y le contactamos. La primera consulta es gratuita.</p>
+              </div>
+            </li>
+            <li class="paso"><span class="paso-tramo" aria-hidden="true"><i></i></span><span class="paso-nodo" aria-hidden="true"></span>
+              <div class="paso-tarjeta">
+                <span class="paso-icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></svg></span>
+                <h3>Estudio de viabilidad</h3>
+                <p>Le hacemos las preguntas necesarias para valorar si su caso tiene posibilidades de éxito.</p>
+              </div>
+            </li>
+            <li class="paso"><span class="paso-tramo" aria-hidden="true"><i></i></span><span class="paso-nodo" aria-hidden="true"></span>
+              <div class="paso-tarjeta">
+                <span class="paso-icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></svg></span>
+                <h3>Asesoramiento</h3>
+                <p>Le explicamos los pasos que hay que dar.</p>
+              </div>
+            </li>
+            <li class="paso"><span class="paso-nodo" aria-hidden="true"></span>
+              <div class="paso-tarjeta">
+                <span class="paso-icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 8h8"/><path d="M8 12h5"/></svg></span>
+                <h3>Seguimiento del caso</h3>
+                <p>Le informamos de cada fase por videollamada o teléfono y, si lo prefiere, en nuestras oficinas.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    </div>
+
+
+    <div class="hoja">
     <section class="preguntas" aria-labelledby="titulo-preguntas">
       <div class="contenedor">
-        <h2 class="seccion-titulo" id="titulo-preguntas" data-dividir>Lo que más nos preguntan</h2>
+        <h2 class="seccion-titulo" id="titulo-preguntas">Preguntas frecuentes</h2>
         <div class="preguntas-lista">
           <details>
             <summary>¿Es seguro un abogado online?</summary>
-            <p>Sí. Mucha gente nos conoce por las redes y cuidamos esa confianza: queremos que te sientas atendido y protegido por la ley.</p>
+            <p>Sí. Mucha gente nos conoce por las redes y cuidamos esa confianza: queremos que se sienta atendido y protegido por la ley.</p>
           </details>
           <details>
-            <summary>¿Cuánto tardáis en responder?</summary>
+            <summary>¿Cuánto tardan en responder?</summary>
             <p>Solemos responder en 24 horas o menos. Si hay muchas consultas podemos tardar algo más, pero siempre lo hacemos lo antes posible.</p>
           </details>
           <details>
             <summary>¿Cómo funciona una consulta online?</summary>
-            <p>Nos dejas tus datos en el formulario de contacto y te llamamos para analizar tu caso y explicarte cómo resolverlo.</p>
+            <p>Nos deja sus datos en el formulario de contacto y le llamamos para analizar su caso y explicarle cómo resolverlo.</p>
           </details>
           <details>
             <summary>¿Puedo ir a un despacho en persona?</summary>
@@ -431,18 +444,18 @@
     </section>
     </div>
 
+
     <div class="hoja hoja-degradado">
     <section class="contacto-banda" aria-labelledby="titulo-contacto">
-      <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
       <div class="contenedor">
         <div>
-          <h2 id="titulo-contacto" data-dividir>¿Hablamos de tu caso?</h2>
+          <h2 id="titulo-contacto">Consulte su caso sin compromiso</h2>
           <a class="telefono-grande" href="tel:+34931311499">931 31 14 99</a>
           <p class="horario-banda">De lunes a viernes, de 12:00 a 20:00 h.</p>
         </div>
         <div class="contacto-datos">
           <p class="oficinas"><strong>Oficinas:</strong> Madrid, Barcelona y Valencia</p>
-          <p><a class="boton boton-principal" href="contacto.html">Cuéntanos tu caso por escrito</a></p>
+          <p><a class="boton boton-principal" href="contacto.html">Enviar consulta por escrito</a></p>
         </div>
       </div>
     </section>
@@ -506,11 +519,6 @@
     </div>
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/animaciones.js"></script>
 </body>
 </html>

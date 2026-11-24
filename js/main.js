@@ -1,8 +1,6 @@
-// Desplazamiento a una sección: con Lenis activo (scroll suave en animaciones.js) se usa el suyo,
-// para que no se peleen los dos; si no, el del navegador
+// Desplazamiento a una sección (el margen bajo la cabecera lo pone scroll-padding-top en el CSS)
 const irA = (el) => {
   if (!el) return;
-  if (window.lenis) { window.lenis.scrollTo(el, { offset: -84 }); return; }
   el.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
 };
 
@@ -150,13 +148,13 @@ if (buscador) {
       .sort((a, b) => Number(b.titulo) - Number(a.titulo))
       .slice(0, 6)
       .map((r) => r.c);
-    if (res.length) pintar(res, `${res.length === 1 ? "1 caso coincide" : `${res.length} casos coinciden`}. Pulsa el tuyo.`);
-    else pintar([], `No lo encontramos con esas palabras. <a href="contacto.html">Cuéntanos tu caso</a> y te decimos si podemos ayudarte.`);
+    if (res.length) pintar(res, `${res.length === 1 ? "1 caso coincide" : `${res.length} casos coinciden`}. Seleccione el suyo.`);
+    else pintar([], `No hay resultados con esas palabras. <a href="contacto.html">Solicite una consulta</a> y le diremos si podemos ayudarle.`);
   };
   campo.addEventListener("input", buscar);
   // Al entrar en el campo vacío se sugieren los casos más habituales
   campo.addEventListener("focus", () => {
-    if (!campo.value.trim()) pintar(casos.filter((c) => POPULARES.includes(c.texto)), "Los casos más habituales. Escribe para buscar el tuyo.");
+    if (!campo.value.trim()) pintar(casos.filter((c) => POPULARES.includes(c.texto)), "Casos más habituales. Escriba para buscar el suyo.");
   });
   // Flechas: del campo a los resultados y entre ellos; Escape vuelve al campo y cierra
   buscador.addEventListener("keydown", (e) => {
@@ -218,12 +216,12 @@ if (form) {
   const estado = document.getElementById("estado-envio");
   const boton = form.querySelector("button[type='submit']");
   const reglas = {
-    nombre: (v) => v.trim() ? "" : "Escribe tu nombre para saber cómo dirigirnos a ti.",
-    telefono: (v) => /^[+\d][\d\s]{8,}$/.test(v.trim()) ? "" : "Escribe un teléfono de al menos 9 cifras para poder llamarte.",
-    email: (v) => !v.trim() || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()) ? "" : "Este correo no parece completo. Revisa que tenga @ y dominio.",
-    area: (v) => v ? "" : "Elige el área que más se parece a tu caso.",
-    caso: (v) => v.trim().length >= 20 ? "" : "Cuéntanos tu caso en al menos 20 caracteres para poder valorarlo.",
-    privacidad: (_, el) => el.checked ? "" : "Necesitamos tu permiso para tratar tus datos y responderte.",
+    nombre: (v) => v.trim() ? "" : "Escriba su nombre para saber cómo dirigirnos a usted.",
+    telefono: (v) => /^[+\d][\d\s]{8,}$/.test(v.trim()) ? "" : "Escriba un teléfono de al menos 9 cifras para poder llamarle.",
+    email: (v) => !v.trim() || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()) ? "" : "Este correo no parece completo. Revise que tenga @ y dominio.",
+    area: (v) => v ? "" : "Seleccione el área que más se parezca a su caso.",
+    caso: (v) => v.trim().length >= 20 ? "" : "Describa su caso en al menos 20 caracteres para poder valorarlo.",
+    privacidad: (_, el) => el.checked ? "" : "Necesitamos su permiso para tratar sus datos y responderle.",
   };
 
   const validar = (campo) => {
@@ -247,16 +245,16 @@ if (form) {
     if (fallos.length) {
       form.elements[fallos[0]].focus();
       estado.classList.add("estado-error");
-      estado.innerHTML = `<strong>Faltan datos</strong>Revisa ${fallos.length === 1 ? "el campo marcado" : `los ${fallos.length} campos marcados`} en rojo.`;
+      estado.innerHTML = `<strong>Faltan datos</strong>Revise ${fallos.length === 1 ? "el campo marcado" : `los ${fallos.length} campos marcados`} en rojo.`;
       return;
     }
     boton.disabled = true;
     boton.textContent = "Enviando…";
     setTimeout(() => {
       boton.disabled = false;
-      boton.textContent = "Enviar mi caso";
+      boton.textContent = "Enviar consulta";
       estado.classList.add("estado-ok");
-      estado.innerHTML = "<strong>Caso recibido (simulación de la demo)</strong>En la web real, aquí te confirmaríamos que un abogado te llamará en menos de 48 h.";
+      estado.innerHTML = "<strong>Consulta recibida (simulación de la demo)</strong>En la web real, aquí le confirmaríamos que un abogado le llamará en menos de 48 horas.";
       form.reset();
       estado.focus();
     }, 900);

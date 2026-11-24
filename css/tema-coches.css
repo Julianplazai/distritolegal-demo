@@ -1,0 +1,367 @@
+/* Tema copiado de coches.distritolegal.es (24-nov), a petición del despacho: la demo anterior no gustó.
+   Va después de estilos.css; para volver al diseño anterior basta con quitar el <link> a este archivo.
+   Paleta de coches: pizarra #394550, perla #E4E6E7, líneas #E5E7EB, coral en la acción principal.
+   Dos ajustes de accesibilidad respecto a coches: el coral baja a #D63B40 (blanco encima 4,6:1; el #FF5857
+   original daba 3,1:1) y el gris de los textos secundarios sube a #56606A (el #ADA9A8 daba 2,3:1). */
+
+:root {
+  --azul: #394550;              /* tinta y fondo oscuro: blanco encima 9,8:1 */
+  --azul-2: #303B44;
+  --marino: #303B44;
+  --turquesa: #FFFFFF;          /* acento sobre fondo oscuro: en coches lo oscuro solo lleva blanco */
+  --acero: #57616A;
+  --petroleo: #394550;
+  --petroleo-texto: #394550;
+  --verde: #59757A;
+  --verde-medio: #9AA3AB;
+  --claro: #E5E7EB;             /* líneas */
+  --gris: #F1F2F3;              /* rellenos suaves sobre blanco */
+  --perla: #E4E6E7;             /* bandas de sección */
+  --texto-suave: #56606A;       /* 6,4:1 sobre blanco, 5,1:1 sobre perla */
+  --texto-suave-oscuro: #C8CDD2;/* 6,1:1 sobre pizarra */
+  --coral: #D63B40;
+  --coral-hover: #C9363B;
+  --degradado: var(--coral);
+  --degradado-vivo: var(--coral);
+  --degradado-banda: var(--azul);
+  --degradado-texto: linear-gradient(90deg, #394550 0%, #57616A 100%);
+  --radio: 10px;
+  --sombra-reposo: 0 2px 0 rgba(3, 23, 49, .04);
+  --sombra-encima: 0 28px 60px -28px rgba(3, 23, 49, .25);
+}
+
+html, body { background: var(--blanco); }
+body { color: var(--azul); }
+:focus-visible { outline-color: var(--azul); }
+.oscuro :focus-visible, .pie :focus-visible, .hoja-azul :focus-visible, .contacto-banda :focus-visible { outline-color: var(--blanco); }
+.cabecera :focus-visible { outline-color: var(--azul); }
+
+h1, h2, h3, h4 { letter-spacing: -.02em; }
+.seccion-titulo, .frase-grande, .hero-titulo, .cabeza-pagina h1, .contacto-info h1, .contacto-banda h2, .abogado h3 { font-weight: 700; }
+.seccion-titulo { font-size: clamp(2rem, 4vw, 3rem); }
+
+/* Segunda parte del titular en un pizarra más claro, como «Lo hacemos nosotros.» en coches */
+.texto-degradado { background: var(--degradado-texto); -webkit-background-clip: text; background-clip: text; color: transparent; }
+/* Solo en las bandas que siguen oscuras; la entrada y las cabeceras interiores llevan .oscuro pero ahora son claras */
+.hoja-azul .texto-degradado, .contacto-banda .texto-degradado { background: none; color: var(--texto-suave-oscuro); }
+
+/* Etiqueta de sección: mayúsculas espaciadas (section-eyebrow de coches) */
+.mision .subtitulo, .cabeza-centrada .subtitulo {
+  font: 600 .78rem var(--f-texto); letter-spacing: .18em; text-transform: uppercase; color: var(--azul);
+}
+.subtitulo { font-weight: 400; font-size: 1.05rem; color: var(--texto-suave); }
+.oscuro .subtitulo, .hoja-azul .subtitulo { color: var(--texto-suave-oscuro); }
+
+/* ---------- Botones: coral con esquinas casi rectas ---------- */
+.boton { border-radius: 5px; font: 600 .98rem var(--f-texto); letter-spacing: -.005em; transition: background-color .2s, color .2s, border-color .2s; }
+.boton-principal { background: var(--coral); color: var(--blanco); }
+.boton-principal:hover { background: var(--coral-hover); filter: none; }
+.boton-principal:active { filter: none; background: var(--coral-hover); }
+.boton-borde { border-width: 1px; }
+.telefono:hover { text-decoration-color: var(--coral); }
+
+/* ---------- Cabecera blanca con línea fina ---------- */
+.cabecera { background: var(--blanco); color: var(--azul); }
+.cabecera::before { background: var(--blanco); -webkit-backdrop-filter: none; backdrop-filter: none; border-bottom: 1px solid var(--claro); }
+.cabecera .contenedor { min-height: 70px; }
+.nav-enlace { color: #57616A; font-weight: 500; }
+.nav-enlace:hover, .nav-enlace[aria-current="page"] { color: var(--azul); }
+.nav-enlace::after { background: var(--azul); height: 1px; }
+.progreso { background: var(--coral); height: 2px; }
+.submenu { background: var(--blanco); border: 1px solid var(--claro); -webkit-backdrop-filter: none; backdrop-filter: none; box-shadow: var(--sombra-encima); }
+.boton-menu { border: 1px solid var(--claro); border-radius: 5px; }
+@media (max-width: 1040px) {
+  .nav { background: var(--blanco); border-top: 1px solid var(--claro); -webkit-backdrop-filter: none; backdrop-filter: none; }
+  .submenu { background: transparent; border: 0; box-shadow: none; }
+  .submenu a:hover { background: var(--gris); }
+  .submenu :focus-visible { outline-color: var(--azul); }
+}
+
+/* ---------- Sin luces difuminadas ni cristal: coches es plano ---------- */
+.aurora { display: none; }
+.hero-foto::before { display: none; }
+
+/* ---------- Secciones a todo lo ancho, alternando perla y blanco ---------- */
+.hoja, .hoja + .hoja { margin: 0; border-radius: 0; box-shadow: none; overflow: visible; }
+.hoja { background: linear-gradient(180deg, var(--blanco) 0%, #F4F5F5 100%); }
+.hoja-gris, .hoja-claro { background: var(--perla); }
+.hoja-azul, .hoja-degradado { background: var(--azul); box-shadow: none; }
+/* El fondo lo pone la hoja que envuelve cada sección. Orden en la portada (audit-003, n.º 6): perla (entrada),
+   blanco (áreas), perla (opiniones), blanco (abogados), perla (medios), blanco (misión), pizarra (proceso),
+   blanco (preguntas), pizarra (cierre) */
+.mision, .abogados, .opiniones, .preguntas, .preguntas.gris { background: transparent; }
+
+/* ---------- Entrada y cabeceras interiores: perla con texto pizarra ----------
+   Ya no llevan la clase .oscuro: con ella el foco del teclado salía blanco sobre perla (audit-003, n.º 1) */
+.hero, .cabeza-pagina { background: var(--perla); color: var(--azul); }
+.hero-titulo .para { color: var(--azul); }
+.hero .entrada, .cabeza-pagina .entrada { color: var(--texto-suave); }
+.hero .entrada strong { color: var(--azul); }
+.buscador-etiqueta { color: var(--azul); font-weight: 700; }
+/* Borde de los campos a 3,65:1 (mínimo 3:1 para controles, WCAG 1.4.11); el #E5E7EB no se distinguía del perla */
+.buscador-campo input { border: 1px solid #7E8790; border-radius: var(--radio); box-shadow: var(--sombra-reposo); }
+.buscador-campo input:focus-visible { outline: 3px solid var(--azul); border-color: var(--azul); }
+.buscador-resultados { background: var(--blanco); border: 1px solid var(--claro); border-radius: var(--radio); -webkit-backdrop-filter: none; backdrop-filter: none; }
+.buscador-estado, .horario { color: var(--texto-suave); }
+.buscador-estado a { color: var(--azul); }
+.trustpilot-hueco a { color: var(--texto-suave); }
+.hero-foto img { border-radius: var(--radio) 0 0 var(--radio); }
+@media (max-width: 899px) { .hero-foto { border-radius: 0 0 var(--radio) var(--radio); } }
+@media (min-width: 600px) and (max-width: 899px) { .hero-foto { border-radius: var(--radio); } }
+.cabeza-pagina .volver { color: var(--azul); }
+.garantias {
+  background: var(--blanco); color: var(--azul); border: 1px solid var(--claro); border-radius: var(--radio);
+  -webkit-backdrop-filter: none; backdrop-filter: none; box-shadow: var(--sombra-encima);
+}
+.garantias li { border-bottom-color: var(--claro); }
+.garantias span { color: var(--texto-suave); }
+.garantias strong { color: var(--azul); }
+
+/* ---------- Cabeceras de sección alineadas a la izquierda, como en coches ---------- */
+.areas-cabeza, .mision .contenedor > .subtitulo, .proceso-vivo .contenedor > .seccion-titulo, .proceso-vivo .contenedor > .subtitulo,
+.abogados .contenedor > .seccion-titulo, .abogados .contenedor > .subtitulo, .preguntas .seccion-titulo,
+.mision, .frase-grande, .mision .apoyo, .areas .intro, .prensa-cabeza p, .calculadoras, .calculadoras-cabeza p, .areas-otras,
+.calculadoras-lista, .rejilla-opiniones, .opiniones .texto p {
+  text-align: left; margin-inline: 0;
+}
+.prensa-cabeza { text-align: left; }   /* es también el .contenedor: conserva su centrado en la página */
+.areas-cabeza, .prensa-cabeza, .opiniones .texto { justify-items: start; }
+.calculadoras-lista, .rejilla-opiniones { max-width: none; }
+.opiniones .texto { text-align: left; }
+.trustpilot-mini { margin-inline: 0; }
+/* Preguntas en dos columnas, como en coches: el título a la izquierda y la lista a la derecha */
+@media (min-width: 960px) {
+  .preguntas .contenedor { max-width: var(--ancho); grid-template-columns: 360px minmax(0, 1fr); gap: var(--s-5); align-items: start; }
+}
+
+/* ---------- Tarjetas: blancas, línea fina, radio de 10 px y elevación al pasar ---------- */
+.caso, .resena, .oficina-google, .abogado-tarjeta, .opinar, .resumen-tp, .calculadoras-lista a {
+  border: 1px solid var(--claro); border-radius: var(--radio); box-shadow: var(--sombra-reposo);
+}
+.caso:hover, .resena:hover, .calculadoras-lista a:hover { border-color: rgba(57, 69, 80, .4); box-shadow: var(--sombra-encima); transform: translateY(-4px); }
+.caso img { border-radius: 0; }
+.caso:hover .caso-flecha { background: var(--azul); color: var(--blanco); }
+.area-boton { border-radius: var(--radio); background: var(--blanco); border: 1px solid var(--claro); }
+.area-boton:hover { background: var(--gris); }
+.area-boton .area-icono { background: var(--gris); border-radius: 8px; }
+.area-boton[aria-selected="true"] .area-icono { background: rgba(255, 255, 255, .14); color: var(--blanco); }
+.caso-fila, .opinar-enlaces a { border-radius: var(--radio); border: 1px solid var(--claro); background: var(--blanco); }
+.caso-fila:hover, .opinar-enlaces a:hover { background: var(--gris); }
+.calculadoras { border-radius: var(--radio); background: var(--perla); }
+@media (prefers-reduced-motion: reduce) { .caso:hover, .resena:hover, .calculadoras-lista a:hover { transform: none; } }
+
+/* ---------- Misión: cifras en cajas grises iguales (las de «Tu equipo» en coches) ---------- */
+.frase-grande { max-width: 24ch; font-size: clamp(1.9rem, 4.4vw, 3.4rem); }
+.pildoras::before { display: none; }
+.pildora, .pildora-grande {
+  background: var(--blanco); color: var(--azul); border: 1px solid var(--claro); border-radius: var(--radio);
+  -webkit-backdrop-filter: none; backdrop-filter: none; box-shadow: var(--sombra-reposo);
+}
+.pildora-numero { font-weight: 700; }
+.pildora-texto { color: var(--texto-suave); }
+
+/* ---------- Proceso: banda pizarra con tarjetas algo más claras (el bloque de tipos de coches) ---------- */
+.paso-tarjeta {
+  background: rgba(255, 255, 255, .06); border: 1px solid rgba(255, 255, 255, .12); border-radius: var(--radio);
+  -webkit-backdrop-filter: none; backdrop-filter: none;
+}
+.paso-icono { background: var(--blanco); color: var(--azul); border-color: var(--blanco); border-radius: 12px; width: 48px; height: 48px; }
+.paso-icono svg { width: 22px; height: 22px; }
+.paso-etiqueta { color: var(--texto-suave-oscuro); font-size: .72rem; letter-spacing: .18em; }
+.paso-nodo { background: var(--blanco); border-color: var(--blanco); box-shadow: 0 0 0 6px rgba(255, 255, 255, .12); }
+.paso-tramo { background: rgba(255, 255, 255, .16); }
+.paso-tramo i { background: var(--blanco); }
+.pasos-marco.en-espera .paso:not(.activo) .paso-nodo { background: var(--azul); border-color: rgba(255, 255, 255, .35); }
+.pasos-marco.en-espera .paso:not(.activo) .paso-icono { background: rgba(255, 255, 255, .08); color: var(--blanco); border-color: rgba(255, 255, 255, .2); }
+
+/* ---------- Abogados: sin luz de color detrás del recorte ---------- */
+.abogado-foto::before { background: radial-gradient(58% 52% at 50% 56%, rgba(57, 69, 80, .1) 0%, rgba(57, 69, 80, 0) 72%); }
+.audiencia strong { font-weight: 700; }
+
+/* ---------- Prensa en banda perla ---------- */
+.prensa { background: var(--perla); color: var(--azul); }
+.prensa-cabeza p { color: var(--texto-suave); }
+.movil-marco { background: #303B44; border-color: #4A5661; box-shadow: 0 30px 60px -30px rgba(3, 23, 49, .45), inset 0 0 0 4px #394550; -webkit-backdrop-filter: none; backdrop-filter: none; }
+.movil-marco::before { background: #303B44; }
+
+/* ---------- Opiniones y preguntas ---------- */
+.trustpilot-mini { background: var(--blanco); border: 1px solid var(--claro); border-radius: var(--radio); -webkit-backdrop-filter: none; backdrop-filter: none; }
+.rejilla-opiniones li { background: var(--blanco); border: 1px solid var(--claro); border-radius: var(--radio); -webkit-backdrop-filter: none; backdrop-filter: none; box-shadow: var(--sombra-reposo); }
+.rejilla-opiniones img { border-radius: 6px; }
+.preguntas summary { font-weight: 600; }
+.preguntas summary::after { background-color: var(--blanco); border: 1px solid var(--claro); }
+.preguntas details[open] summary::after { background-color: var(--blanco); border-color: var(--azul); }
+
+/* ---------- Cierre: banda pizarra centrada con el botón coral ---------- */
+.contacto-banda { background: var(--azul); }
+.contacto-banda .contenedor { background: none; border: 0; box-shadow: none; -webkit-backdrop-filter: none; backdrop-filter: none; border-radius: 0; }
+.contacto-banda h2 { font-size: clamp(2.2rem, 5.6vw, 4rem); letter-spacing: -.02em; }
+.pie { margin-top: 0; background: var(--azul-2); }
+.pie h2 { color: var(--blanco); }
+
+/* ---------- Páginas interiores ---------- */
+.aviso { border-radius: var(--radio); }
+.aviso a { color: var(--blanco); }
+.pasos li::before { background: var(--blanco); color: var(--azul); font-weight: 700; }
+.pasos::before { background: rgba(255, 255, 255, .3); opacity: 1; }
+.experto img { background: var(--perla); border-radius: var(--radio); }
+.formulario { background: var(--blanco); border: 1px solid var(--claro); border-radius: var(--radio); box-shadow: var(--sombra-encima); }
+.formulario::before { background: var(--azul); height: 3px; }
+.campo input, .campo select, .campo textarea { border-color: #7E8790; border-radius: 6px; }   /* 3,65:1 sobre blanco (audit-003, n.º 3) */
+
+/* ---------- Página de opiniones ---------- */
+.oficina-icono, .area-resuelta-icono { background: var(--azul); color: var(--blanco); border-radius: 12px; }
+.area-resuelta { border-radius: var(--radio); background: var(--blanco); border: 1px solid var(--claro); box-shadow: var(--sombra-reposo); }
+.area-resuelta:hover { background: var(--blanco); border-color: rgba(57, 69, 80, .4); box-shadow: var(--sombra-encima); transform: translateY(-4px); }
+.hoja-gris .area-resuelta, .hoja-gris .resena, .hoja-gris .oficina-google, .hoja-gris .abogado-tarjeta, .hoja-gris .opinar-enlaces a { background: var(--blanco); }
+.abogado-tarjeta-foto, .galeria figure.recorte { background: var(--perla); }
+.etiquetas li { background: var(--gris); border: 1px solid var(--claro); }
+.fiable-lista li { background: rgba(255, 255, 255, .06); border-radius: var(--radio); -webkit-backdrop-filter: none; backdrop-filter: none; }
+.fiable-icono { background: var(--blanco); color: var(--azul); border-radius: 12px; }
+.galeria figure { border-radius: var(--radio); }
+.opinar { background: var(--blanco); }
+
+/* ---------- Busca tu caso (24-nov): un solo formato de fila para todos los casos ----------
+   Las calculadoras van dentro de su área, en gris para distinguirlas de los casos */
+.casos-filas, .casos-calculadoras { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; grid-template-columns: minmax(0, 1fr); }
+.casos-calculadoras { margin-top: 8px; }
+.caso-fila { min-height: 60px; padding: 12px 16px; box-shadow: var(--sombra-reposo); }
+.caso-fila .caso-titulo { font: 600 1rem/1.3 var(--f-titulo); }
+.caso-fila:hover { background: var(--blanco); border-color: rgba(57, 69, 80, .4); box-shadow: var(--sombra-encima); }
+.caso-calculadora { background: var(--gris); border-color: transparent; box-shadow: none; }
+.caso-calculadora:hover { background: var(--perla); border-color: transparent; box-shadow: none; }
+.caso-calculadora .calculadora-tipo { display: block; font: 600 .7rem var(--f-texto); letter-spacing: .14em; text-transform: uppercase; color: var(--texto-suave); }
+.panel-cabeza { margin-bottom: 12px; }
+.area-enlace { font: 600 .95rem var(--f-texto); color: var(--azul); }
+@media (min-width: 640px) { .casos-filas, .casos-calculadoras { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1000px) { .casos-filas, .casos-calculadoras { grid-template-columns: repeat(2, minmax(0, 1fr)); } .explorador.activo .explorador-areas { top: 90px; } }
+.areas-otras { margin-top: var(--s-4); }
+
+/* ---------- Movimiento como en coches ----------
+   Sin animaciones de scroll (se quitaron GSAP y Lenis): solo transiciones de 300 ms al pasar por encima,
+   el «+» de las preguntas que gira y el cambio de área sin fundido. Las flechas y las fotos ya no se desplazan */
+html { scroll-behavior: smooth; }
+.boton, .caso, .caso-fila, .area-boton, .calculadoras-lista a, .resena, .area-resuelta, .opinar-enlaces a, .preguntas summary::after {
+  transition-duration: .3s; transition-timing-function: ease;
+}
+.explorador.activo .explorador-panel:not([hidden]) { animation: none; }
+.caso:hover img, .caso-fila:hover svg, .area-enlace:hover svg, .calculadoras-lista a:hover svg,
+.opinar-enlaces a:hover svg, .area-resuelta:hover .area-resuelta-enlace svg { transform: none; }
+.servicios-lista a:hover { padding-left: 4px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+/* El área elegida sigue en pizarra al pasar el ratón (el :hover gris de arriba la dejaba con texto blanco sobre gris) */
+.area-boton[aria-selected="true"], .area-boton[aria-selected="true"]:hover { background: var(--azul); color: var(--blanco); border-color: var(--azul); }
+
+/* =====================================================================
+   Pantallas anchas y huecos (24-nov): el despacho veía la página estrecha en monitores grandes
+   y zonas con demasiado espacio.
+   ===================================================================== */
+
+/* Aire entre secciones como en coches (80 a 112 px), sin los 160 px de antes */
+:root { --s-5: clamp(48px, 6vw, 80px); --s-6: clamp(64px, 8vw, 112px); }
+/* El ancho de la página crece con la pantalla y, en monitores muy grandes, también el texto */
+@media (min-width: 1600px) { :root { --ancho: 1320px; } }
+@media (min-width: 2200px) { :root { --ancho: 1440px; } html { font-size: 17px; } }
+
+/* Entrada: la foto queda dentro del ancho de la página, como el resto (antes llegaba al borde de la pantalla) */
+@media (min-width: 900px) {
+  .hero { padding-block: var(--s-4) var(--s-5); }
+  .hero .contenedor {
+    max-width: var(--ancho); margin-inline: auto; padding-inline: var(--margen);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); column-gap: var(--s-5); align-items: center;
+  }
+  .hero-texto { padding-block: 0; }
+  .hero-foto { margin-top: 0; align-self: center; }
+  .hero-foto img { border-radius: var(--radio); aspect-ratio: 1.1; }
+}
+
+/* Misión: la frase a la izquierda y el texto de apoyo a la derecha, sin media pantalla vacía */
+@media (min-width: 1000px) {
+  .mision .contenedor { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); column-gap: var(--s-5); align-items: end; }
+  .mision .subtitulo, .mision .pildoras { grid-column: 1 / -1; }
+  .mision .apoyo { margin: 0; max-width: 40ch; }
+  .mision .pildoras { margin-top: var(--s-4); }
+}
+
+/* Busca tu caso en escritorio: las áreas en dos filas de cuatro encima y los casos a todo el ancho debajo.
+   En columna lateral, las ocho áreas eran el doble de altas que los casos y dejaban un hueco a la derecha */
+@media (min-width: 1000px) {
+  .explorador.activo { grid-template-columns: minmax(0, 1fr); gap: var(--s-3); }
+  .explorador.activo .explorador-areas { position: static; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .casos-filas, .casos-calculadoras { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+/* Márgenes que se sumaban */
+.pasos-marco, .abogados-lista, .moviles-ventana { margin-top: var(--s-4); }
+.contacto-banda .contenedor { width: 100%; padding: 0 var(--margen); }
+.mision { padding-block: var(--s-6); }
+
+/* Opiniones: título y texto a la izquierda, nota de Trustpilot a la derecha (como las notas de coches) */
+.nota-tp {
+  display: grid; gap: 2px; padding: 18px 22px; width: 100%; max-width: 380px;
+  background: var(--blanco); border: 1px solid var(--claro); border-radius: var(--radio); box-shadow: var(--sombra-reposo);
+}
+.nota-tp-marca { font: 600 .72rem var(--f-texto); letter-spacing: .14em; text-transform: uppercase; color: var(--texto-suave); }
+.nota-tp-cifra { display: flex; align-items: baseline; gap: 8px; }
+.nota-tp-cifra strong { font: 700 2.4rem/1.1 var(--f-titulo); }
+.nota-tp-cifra span { font: 600 1rem var(--f-titulo); }
+.nota-tp-base { font-size: .9rem; color: var(--texto-suave); }
+@media (min-width: 960px) {
+  .opiniones .texto { grid-template-columns: minmax(0, 1fr) 380px; column-gap: var(--s-5); align-items: center; }
+  .opiniones .texto .nota-tp { grid-column: 2 !important; grid-row: 1 / span 3 !important; justify-self: end; }
+}
+
+/* ---------- audit-003 ---------- */
+/* n.º 4: los enlaces del pie, a 44 px de alto (antes 36): el mínimo para pulsarlos con el dedo */
+.pie a { min-height: 44px; }
+
+/* n.º 5: las mayúsculas espaciadas quedan solo en la etiqueta de sección, el gesto de coches.
+   En tarjetas y notas repetían lo que ya dice el título */
+.caso-calculadora .calculadora-tipo, .nota-tp-marca, .abogado-tarjeta-cargo, .paso-etiqueta {
+  text-transform: none; letter-spacing: 0; font-size: .8rem;
+}
+
+/* n.º 7: en móvil, las ocho áreas en filas compactas a dos columnas (nombre y temas, sin icono encima).
+   Antes ocupaban unos 560 px antes del primer caso */
+@media (max-width: 639px) {
+  .explorador.activo .explorador-areas { gap: 6px; }
+  .area-boton { min-height: 56px; padding: 8px 12px; row-gap: 0; }
+  .area-boton .area-icono { display: none; }
+  .area-nombre { font-size: .92rem; }
+  .area-cuenta { font-size: .78rem; }
+}
+
+/* ---------- Entrada con la foto grande, como en la web original (24-nov) ----------
+   La abogada prefiere la entrada original: la foto de Xavi y Andrés a lo grande, no en un recuadro.
+   Escritorio: la foto ocupa la mitad derecha de la entrada hasta el borde de la pantalla y a toda su altura,
+   y se funde por la izquierda con el perla (el fondo del estudio es casi el mismo gris, #E2E6E8).
+   El texto va en la mitad izquierda, solo sobre fondo liso: nada encima de las personas.
+   Caras de unos 245 px de alto a 1.440 y 260 px a 1.920 (antes unos 150) */
+@media (min-width: 900px) {
+  .hero { padding-block: 0; min-height: clamp(600px, calc(100vh - 70px), 880px); display: flex; align-items: center; }
+  .hero .contenedor { position: static; width: 100%; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: var(--s-4); }
+  .hero-texto { grid-column: 1; padding-block: var(--s-5); }
+  .hero-foto {
+    position: absolute; top: 0; bottom: 0; left: 50%; right: 0; margin: 0; overflow: hidden;
+    align-self: stretch;   /* con «center» (regla de pantallas anchas) la caja absoluta se encogía a la altura de la foto */
+    -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 14%); mask-image: linear-gradient(90deg, transparent 0%, #000 14%);
+  }
+  .hero-foto img {
+    width: 100%; height: 100%; aspect-ratio: auto; max-width: none;
+    object-fit: cover; object-position: 53% 10%; border-radius: 0; background: none;   /* 53 %: centro entre las dos cabezas, con aire a la derecha de Andrés */
+  }
+}
+/* Móvil: la foto abre la pantalla a todo el ancho, más grande (caras de unos 160 px, antes 137),
+   de la cabeza al pecho, y se funde por abajo con el perla en vez de cortarse en un recuadro */
+@media (max-width: 899px) {
+  .hero { padding-top: 0; }   /* la foto empieza justo bajo la cabecera, sin franja gris encima */
+  .hero-foto {
+    aspect-ratio: 390 / 400; border-radius: 0;
+    -webkit-mask-image: linear-gradient(180deg, #000 78%, transparent 100%); mask-image: linear-gradient(180deg, #000 78%, transparent 100%);
+  }
+  .hero-foto img { width: 245%; margin-left: -76.2%; border-radius: 0; background: none; }
+}
+@media (min-width: 600px) and (max-width: 899px) {
+  .hero-foto { max-width: none; width: auto; margin-inline: calc(-1 * var(--margen)); aspect-ratio: 16 / 10; border-radius: 0; }
+  .hero-foto img { width: 150%; margin-left: -27.3%; }
+}

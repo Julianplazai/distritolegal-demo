@@ -5,11 +5,12 @@
   <meta name="robots" content="noindex, nofollow">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contacto | Distrito Legal</title>
-  <meta name="description" content="Cuéntanos tu caso. Abogados online en toda España y oficinas en Madrid, Barcelona y Valencia. Teléfono 931 31 14 99.">
+  <meta name="description" content="Solicite una consulta gratuita. Abogados online en toda España y oficinas en Madrid, Barcelona y Valencia. Teléfono 931 31 14 99.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/tema-coches.css"><!-- estilo de coches.distritolegal.es; quitar para volver al diseño anterior -->
 </head>
 <body>
   <a class="saltar" href="#contenido">Saltar al contenido</a>
@@ -17,10 +18,10 @@
   <header class="cabecera">
     <div class="contenedor">
       <a class="logo" href="index.html" aria-label="Distrito Legal, inicio">
-        <img src="img/logo-distrito-legal.webp" alt="" width="165" height="41">
+        <img src="img/logo-distrito-legal-oscuro.webp" alt="" width="165" height="41">
       </a>
       <button class="boton-menu" type="button" aria-expanded="false" aria-controls="nav">Menú</button>
-      <nav class="nav" id="nav" data-lenis-prevent aria-label="Principal">
+      <nav class="nav" id="nav" aria-label="Principal">
         <ul class="nav-lista">
           <li>
             <button class="nav-enlace" type="button" data-desplegable aria-expanded="false" aria-controls="submenu-areas">
@@ -40,14 +41,13 @@
           <li><a class="nav-enlace" href="contacto.html" aria-current="page">Contacto</a></li>
         </ul>
         <div class="cabecera-acciones-movil">
-          <a class="telefono" href="tel:+34931311499">Llámanos: 931 31 14 99</a>
+          <a class="telefono" href="tel:+34931311499">Llámenos: 931 31 14 99</a>
         </div>
       </nav>
       <div class="cabecera-acciones">
         <a class="telefono" href="tel:+34931311499">931 31 14 99</a>
       </div>
     </div>
-    <span class="progreso" aria-hidden="true"></span>
   </header>
 
   <main id="contenido" class="contacto-pagina hoja">
@@ -55,9 +55,9 @@
       <a class="volver" href="index.html" style="margin-top:16px">‹ Volver</a>
       <div class="rejilla">
         <div class="contacto-info">
-          <h1 data-dividir>Cuéntanos tu caso</h1>
-          <p class="entrada">Estés donde estés, gestionamos tu caso sin que tengas que desplazarte.</p>
-          <p>Nuestros abogados llevan todos los casos online, por videollamada y teléfono. Si prefieres una consulta en persona, puedes visitarnos en nuestras oficinas.</p>
+          <h1>Solicite una consulta gratuita</h1>
+          <p class="entrada">Gestionamos su caso a distancia, esté donde esté.</p>
+          <p>Nuestros abogados llevan todos los casos online, por videollamada y teléfono. Si prefiere una consulta en persona, puede visitarnos en nuestras oficinas.</p>
 
           <ul class="contacto-datos-lista">
             <li><span>Teléfono</span><a class="telefono" href="tel:+34931311499">931 31 14 99</a></li>
@@ -67,13 +67,13 @@
         </div>
 
         <form class="formulario" id="form-contacto" novalidate aria-labelledby="titulo-form">
-          <h2 id="titulo-form">Te llamamos en menos de 48 h</h2>
-          <p class="nota-pequena">La primera consulta es gratis. Todos los campos son obligatorios salvo el correo.</p>
+          <h2 id="titulo-form">Le llamamos en menos de 48 horas</h2>
+          <p class="nota-pequena">La primera consulta es gratuita. Todos los campos son obligatorios salvo el correo.</p>
 
           <div class="campos">
             <div class="campo">
               <label for="nombre">Nombre</label>
-              <input id="nombre" name="nombre" type="text" autocomplete="name" placeholder="Tu nombre" aria-describedby="error-nombre" required>
+              <input id="nombre" name="nombre" type="text" autocomplete="name" placeholder="Su nombre" aria-describedby="error-nombre" required>
               <p class="error-campo" id="error-nombre" aria-live="polite"></p>
             </div>
             <div class="campo">
@@ -87,34 +87,38 @@
               <p class="error-campo" id="error-email" aria-live="polite"></p>
             </div>
             <div class="campo campo-ancho">
-              <label for="area">¿De qué trata tu caso?</label>
+              <label for="area">Área de su consulta</label>
+              <!-- Las mismas áreas que «Áreas de práctica» de la portada (herramientas/explorador.py) -->
               <select id="area" name="area" aria-describedby="error-area" required>
-                <option value="">Elige un área</option>
-                <option>Bancario (tarjetas, hipotecas, deudas)</option>
-                <option>Reclamaciones (accidentes, vuelos, clínicas)</option>
-                <option>Laboral (despido, incapacidad, pensiones)</option>
-                <option>Civil (lesiones, extranjería, vicios ocultos)</option>
-                <option>Penal</option>
+                <option value="">Seleccione un área</option>
+                <option>Derecho bancario (tarjetas, hipotecas, financiación)</option>
+                <option>Segunda Oportunidad y deudas</option>
+                <option>Derecho laboral (despidos, nóminas, finiquitos)</option>
+                <option>Incapacidades y pensiones</option>
+                <option>Accidentes y consumo (tráfico, vuelos, clínicas)</option>
+                <option>Derecho civil y de familia</option>
+                <option>Derecho penal</option>
+                <option>Derecho administrativo y fiscal</option>
                 <option>No lo sé</option>
               </select>
               <p class="error-campo" id="error-area" aria-live="polite"></p>
             </div>
             <div class="campo campo-ancho">
-              <label for="caso">Cuéntanos qué ha pasado</label>
-              <textarea id="caso" name="caso" placeholder="Explícanos tu situación con tus palabras" aria-describedby="error-caso" required></textarea>
+              <label for="caso">Describa lo ocurrido</label>
+              <textarea id="caso" name="caso" placeholder="Explique su situación con sus palabras" aria-describedby="error-caso" required></textarea>
               <p class="error-campo" id="error-caso" aria-live="polite"></p>
             </div>
             <div class="campo campo-ancho">
               <div class="casilla">
                 <input id="privacidad" name="privacidad" type="checkbox" aria-describedby="error-privacidad" required>
-                <label for="privacidad">He leído la <a href="https://distritolegal.es/politica-de-privacidad/">política de privacidad</a> y acepto que tratéis mis datos para responderme.</label>
+                <label for="privacidad">He leído la <a href="https://distritolegal.es/politica-de-privacidad/">política de privacidad</a> y acepto el tratamiento de mis datos para recibir respuesta.</label>
               </div>
               <p class="error-campo" id="error-privacidad" aria-live="polite"></p>
             </div>
           </div>
 
           <div class="enviar-fila">
-            <button class="boton boton-principal" type="submit">Enviar mi caso</button>
+            <button class="boton boton-principal" type="submit">Enviar consulta</button>
           </div>
           <div class="estado" id="estado-envio" role="status" tabindex="-1"></div>
           <p class="nota-pequena" style="margin-top:16px">Versión de demostración: este formulario no envía datos.</p>
@@ -179,11 +183,6 @@
     </div>
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/animaciones.js"></script>
 </body>
 </html>

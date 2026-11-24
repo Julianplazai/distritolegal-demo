@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/tema-coches.css"><!-- estilo de coches.distritolegal.es; quitar para volver al diseño anterior -->
 </head>
 <body>
   <a class="saltar" href="#contenido">Saltar al contenido</a>
@@ -17,10 +18,10 @@
   <header class="cabecera">
     <div class="contenedor">
       <a class="logo" href="index.html" aria-label="Distrito Legal, inicio">
-        <img src="img/logo-distrito-legal.webp" alt="" width="165" height="41">
+        <img src="img/logo-distrito-legal-oscuro.webp" alt="" width="165" height="41">
       </a>
       <button class="boton-menu" type="button" aria-expanded="false" aria-controls="nav">Menú</button>
-      <nav class="nav" id="nav" data-lenis-prevent aria-label="Principal">
+      <nav class="nav" id="nav" aria-label="Principal">
         <ul class="nav-lista">
           <li>
             <button class="nav-enlace" type="button" data-desplegable aria-expanded="false" aria-controls="submenu-areas">
@@ -40,37 +41,35 @@
           <li><a class="nav-enlace" href="contacto.html">Contacto</a></li>
         </ul>
         <div class="cabecera-acciones-movil">
-          <a class="boton boton-principal" href="contacto.html">Cuéntanos tu caso</a>
-          <a class="telefono" href="tel:+34931311499">Llámanos: 931 31 14 99</a>
+          <a class="boton boton-principal" href="contacto.html">Solicitar consulta gratuita</a>
+          <a class="telefono" href="tel:+34931311499">Llámenos: 931 31 14 99</a>
         </div>
       </nav>
       <div class="cabecera-acciones">
         <a class="telefono" href="tel:+34931311499">931 31 14 99</a>
-        <a class="boton boton-principal" href="contacto.html">Cuéntanos tu caso</a>
+        <a class="boton boton-principal" href="contacto.html">Consulta gratuita</a>
       </div>
     </div>
-    <span class="progreso" aria-hidden="true"></span>
   </header>
 
   <main id="contenido">
-    <section class="cabeza-pagina oscuro" aria-labelledby="titulo-pagina">
-      <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+    <section class="cabeza-pagina" aria-labelledby="titulo-pagina">
       <div class="contenedor">
         <a class="volver" href="index.html">‹ Volver</a>
         <div class="rejilla">
           <div>
             <h1 id="titulo-pagina">Abogados especialistas en <span class="texto-degradado">Derecho Bancario</span></h1>
-            <p class="entrada">El Derecho Bancario regula cómo funcionan los bancos y las entidades financieras, y cómo deben actuar cuando te venden un producto o un servicio, seas particular o profesional. Si un banco te ha cobrado de más, te ayudamos a reclamarlo.</p>
+            <p class="entrada">El Derecho Bancario regula cómo funcionan los bancos y las entidades financieras, y cómo deben actuar cuando le venden un producto o un servicio, sea usted particular o profesional. Si un banco le ha cobrado de más, le ayudamos a reclamarlo.</p>
             <div class="inicio-acciones">
-              <a class="boton boton-principal" href="contacto.html">Cuéntanos tu caso</a>
-              <a class="telefono" href="tel:+34931311499">o llama al 931 31 14 99</a>
+              <a class="boton boton-principal" href="contacto.html">Solicitar consulta gratuita</a>
+              <a class="telefono" href="tel:+34931311499">o llame al 931 31 14 99</a>
             </div>
           </div>
-          <ul class="garantias" aria-label="Cómo trabajamos">
-            <li><span>Primera consulta</span><strong>Gratis</strong></li>
-            <li><span>Te llamamos en menos de</span><strong>48 h</strong></li>
-            <li><span>En cada etapa de tu caso</span><strong>Te informamos</strong></li>
-            <li><span>Cómodo y fácil</span><strong>Sin moverte de casa</strong></li>
+          <ul class="garantias" aria-label="Condiciones del servicio">
+            <li><span>Primera consulta</span><strong>Gratuita</strong></li>
+            <li><span>Le llamamos en menos de</span><strong>48 horas</strong></li>
+            <li><span>En cada fase del procedimiento</span><strong>Le informamos</strong></li>
+            <li><span>Sin desplazamientos</span><strong>Atención a distancia</strong></li>
             <li><span>Cobertura</span><strong>Toda España</strong></li>
           </ul>
         </div>
@@ -81,7 +80,7 @@
     <section class="bloque" aria-labelledby="titulo-servicios">
       <div class="contenedor dos-columnas">
         <div>
-          <h2 class="seccion-titulo" id="titulo-servicios">¿Qué te ha pasado con el banco?</h2>
+          <h2 class="seccion-titulo" id="titulo-servicios">Reclamaciones bancarias más habituales</h2>
           <ul class="servicios-lista">
             <li><a href="https://distritolegal.es/segundaoportunidad/">Ley de la Segunda Oportunidad <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M6 3l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2"/></svg></a></li>
             <li><a href="https://distritolegal.es/tarjetas-revolving/">Tarjetas revolving <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M6 3l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2"/></svg></a></li>
@@ -95,16 +94,16 @@
           <div class="aviso">
             <h3>Ley de la Segunda Oportunidad</h3>
             <p>Permite a particulares y autónomos cancelar todas sus deudas, públicas y privadas, y empezar de cero.</p>
-            <p><a href="https://distritolegal.es/segundaoportunidad/">Ver si puedo acogerme</a></p>
+            <p><a href="https://distritolegal.es/segundaoportunidad/">Comprobar si puede acogerse</a></p>
           </div>
         </div>
 
         <div>
-          <h2 class="seccion-titulo">¿Cuándo necesitas un abogado bancario?</h2>
-          <p class="texto-apoyo">Estos son los casos que más llevamos:</p>
+          <h2 class="seccion-titulo">Cuándo acudir a un abogado bancario</h2>
+          <p class="texto-apoyo">Estos son los asuntos que más llevamos:</p>
           <ul class="lista-casos">
             <li>Reclamar intereses abusivos de tarjetas revolving.</li>
-            <li>Acogerte a la Ley de la Segunda Oportunidad y eliminar tus deudas.</li>
+            <li>Acogerse a la Ley de la Segunda Oportunidad y cancelar sus deudas.</li>
             <li>Reclamar la cláusula suelo.</li>
             <li>Salir de Asnef u otros registros de morosidad.</li>
             <li>Demandar por gastos hipotecarios abusivos.</li>
@@ -120,12 +119,12 @@
     <div class="hoja hoja-azul">
     <section class="proceso" aria-labelledby="titulo-proceso">
       <div class="contenedor">
-        <h2 class="seccion-titulo" id="titulo-proceso">Así llevamos tu caso</h2>
+        <h2 class="seccion-titulo" id="titulo-proceso">Cómo trabajamos</h2>
         <ol class="pasos">
-          <li><div><h3>Te llamamos</h3><p>Nos dejas tus datos y te contactamos. La primera consulta es gratis.</p></div></li>
-          <li><div><h3>Vemos si es viable</h3><p>Te hacemos las preguntas necesarias para saber si tu caso tiene posibilidades de éxito.</p></div></li>
-          <li><div><h3>Te explicamos cómo seguir</h3><p>Te asesoramos y te contamos qué pasos hay que dar.</p></div></li>
-          <li><div><h3>Te informamos en cada etapa</h3><p>Llevamos el caso por videollamada y teléfono, y si lo prefieres, en nuestras oficinas.</p></div></li>
+          <li><div><h3>Primera llamada</h3><p>Nos deja sus datos y le contactamos. La primera consulta es gratuita.</p></div></li>
+          <li><div><h3>Estudio de viabilidad</h3><p>Le hacemos las preguntas necesarias para valorar si su caso tiene posibilidades de éxito.</p></div></li>
+          <li><div><h3>Asesoramiento</h3><p>Le explicamos los pasos que hay que dar.</p></div></li>
+          <li><div><h3>Seguimiento del caso</h3><p>Llevamos el caso por videollamada y teléfono y, si lo prefiere, en nuestras oficinas.</p></div></li>
         </ol>
       </div>
     </section>
@@ -164,7 +163,7 @@
           </details>
           <details>
             <summary>¿Se puede paralizar una subasta?</summary>
-            <p>Sí, en cualquier momento antes de que se celebre la subasta judicial. Tienes derecho a pedir una audiencia con el ejecutante y pagar la deuda pendiente.</p>
+            <p>Sí, en cualquier momento antes de que se celebre la subasta judicial. Tiene derecho a pedir una audiencia con el ejecutante y pagar la deuda pendiente.</p>
           </details>
           <details>
             <summary>¿Se puede paralizar un embargo judicial?</summary>
@@ -172,7 +171,7 @@
           </details>
           <details>
             <summary>¿Cómo sé si estoy pagando intereses usurarios?</summary>
-            <p>Revisa el contrato de tu tarjeta para ver el interés que te aplican. Los intereses de las tarjetas revolving que se consideran usurarios suelen estar entre el 20 y el 26 % de interés.</p>
+            <p>Revise el contrato de su tarjeta para ver el interés que le aplican. Los intereses de las tarjetas revolving que se consideran usurarios suelen estar entre el 20 y el 26 % de interés.</p>
           </details>
         </div>
       </div>
@@ -181,16 +180,15 @@
 
     <div class="hoja hoja-degradado">
     <section class="contacto-banda" aria-labelledby="titulo-contacto">
-      <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
       <div class="contenedor">
         <div>
-          <h2 id="titulo-contacto" data-dividir>¿Te ha cobrado de más el banco?</h2>
+          <h2 id="titulo-contacto">Consulte su caso bancario</h2>
           <a class="telefono-grande" href="tel:+34931311499">931 31 14 99</a>
           <p class="horario-banda">De lunes a viernes, de 12:00 a 20:00 h.</p>
         </div>
         <div class="contacto-datos">
-          <p class="oficinas"><strong>Primera consulta gratis.</strong> Te decimos si tu caso es viable antes de empezar.</p>
-          <p><a class="boton boton-principal" href="contacto.html">Cuéntanos tu caso por escrito</a></p>
+          <p class="oficinas"><strong>Primera consulta gratuita.</strong> Le indicamos si su caso es viable antes de empezar.</p>
+          <p><a class="boton boton-principal" href="contacto.html">Enviar consulta por escrito</a></p>
         </div>
       </div>
     </section>
@@ -253,11 +251,6 @@
     </div>
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/animaciones.js"></script>
 </body>
 </html>
